@@ -1,0 +1,404 @@
+{
+	"ZW": {
+		"crews": [
+			{
+				"id": 0156,
+				"name": "李生芳",
+				"sex": "",	
+				"station": "书记",	
+				"tenure": "1986.05-1989.08",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0157,
+				"name": "史国枢",
+				"sex": "",	
+				"station": "书记",	
+				"tenure": "1989.11-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0158,
+				"name": "何福兴",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1986.05-1989.08",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0159,
+				"name": "宋维祯",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1986.05-1988.09",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0160,
+				"name": "葛凡",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1986.05-1989.12",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0161,
+				"name": "才培多杰",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1986.05-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0162,
+				"name": "赵启中",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1989.08-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0163,
+				"name": "韩文禄",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1990.03-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0164,
+				"name": "王西明",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1990.03-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0165,
+				"name": "杨允习",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1986.05-1986.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0166,
+				"name": "尕帕",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1986.05-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0167,
+				"name": "乔正孝",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1986.05-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0168,
+				"name": "李培兰",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1986.05-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0169,
+				"name": "高昭平",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1986.12-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0170,
+				"name": "宋转运",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1990.08-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0171,
+				"name": "杜小明",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1990.08-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0172,
+				"name": "彭措旺扎",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1988.08-1989.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 7,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]	
+	},
+	"RD": {
+		"crews": [
+			{
+				"id": 0173,
+				"name": "王文明",
+				"sex": "",	
+				"station": "主任",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0174,
+				"name": "司维洪",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0175,
+				"name": "格桑秋吉",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0176,
+				"name": "秋哇",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0177,
+				"name": "米扎西",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 7,
+		"main_duties": "...",
+		"snapshot": []
+	},
+	"ZF": {
+		"crews": [
+			{
+				"id": 0178,
+				"name": "何福兴",
+				"sex": "",	
+				"station": "州长",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0179,
+				"name": "杨允习",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1986-1986.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0180,
+				"name": "彭措旺扎",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1986.06-1989",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0181,
+				"name": "高昭平",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1986.06-1991.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0182,
+				"name": "本派",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0183,
+				"name": "索南尖措",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0184,
+				"name": "杜小明",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1990.12-1991.05	",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0185,
+				"name": "杨建中",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 7,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]
+	},
+	"ZX": {
+		"crews": [
+			{
+				"id": 0186,
+				"name": "朱清明",
+				"sex": "",	
+				"station": "主席",	
+				"tenure": "1981.05-1984.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0187,
+				"name": "阳藏伯",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1981.05-1986.06",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0188,
+				"name": "阿庆",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1981.05-1986.06",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0189,
+				"name": "索南则莫",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1981.05-1985.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0190,
+				"name": "弋保元",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1962.06-1963.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0191,
+				"name": "曾志鸿",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1984.11-1986.06",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0192,
+				"name": "仲却",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1984.11-1986.06",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 7,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]
+	}
+}

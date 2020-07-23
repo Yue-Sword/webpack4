@@ -1,0 +1,445 @@
+{
+	"ZW": {
+		"crews": [
+			{
+				"id": 0193,
+				"name": "史国枢",
+				"sex": "",	
+				"station": "书记",	
+				"tenure": "1991.04-1994.01",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0194,
+				"name": "赵启中",
+				"sex": "",	
+				"station": "书记",	
+				"tenure": "1994.01-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0195,
+				"name": "何福兴",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1991.04-1993.01",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0196,
+				"name": "赵启中",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1991.04-1994.01",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0197,
+				"name": "韩文禄",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1991.04-1996.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0198,
+				"name": "王西明",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1991.4-1995.09",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0199,
+				"name": "多杰热旦",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1993.03-1996.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0200,
+				"name": "樊大新",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1994.01-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0201,
+				"name": "马占魁",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "1994.01-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0202,
+				"name": "靳生贵",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1994.10-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0203,
+				"name": "杨学武",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1996.03-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0204,
+				"name": "宋转运",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1991.04-1994.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0205,
+				"name": "杜小明",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1991.04-1993.09",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0206,
+				"name": "索立志",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1991.04-1993.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0207,
+				"name": "土登洛章",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1991.04-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0208,
+				"name": "马卫东",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1994.10-1995.07",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0209,
+				"name": "扎西旺章",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1994.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0210,
+				"name": "杨学武",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "1993.11-1996.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0211,
+				"name": "马伟",
+				"sex": "",
+				"nation": "汉",
+				"station": "常委",	
+				"tenure": "1994.10-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 8,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]	
+	},
+	"RD": {
+		"crews": [
+			{
+				"id": 0212,
+				"name": "才培多杰",
+				"sex": "",	
+				"station": "主任",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0213,
+				"name": "格桑秋吉",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0214,
+				"name": "米扎西",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0215,
+				"name": "尕帕",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0216,
+				"name": "本派",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1991.05-1995.12",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0217,
+				"name": "李怀生",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0218,
+				"name": "陈师科",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0219,
+				"name": "赵国清",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 8,
+		"main_duties": "...",
+		"snapshot": []
+	},
+	"ZF": {
+		"crews": [
+			{
+				"id": 0220,
+				"name": "何福兴",
+				"sex": "",	
+				"station": "州长",	
+				"tenure": "1991.05-1993.02",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0221,
+				"name": "韩文录",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1991.05-1993.02",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0222,
+				"name": "多杰热旦",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1991.05-1996.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0223,
+				"name": "杜小明",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1991.05-1993.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0224,
+				"name": "吴国清",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1994-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0225,
+				"name": "罗松达哇",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0226,
+				"name": "江格",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0227,
+				"name": "勒生贵",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1991.05-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0228,
+				"name": "梁晓安",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "1995-1996.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 8,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]
+	},
+	"ZX": {
+		"crews": [
+			{
+				"id": 0229,
+				"name": "阳藏伯",
+				"sex": "",	
+				"station": "主席",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0230,
+				"name": "冯诣林",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0231,
+				"name": "阿庆",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1986.06-1990.06",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0232,
+				"name": "仲却",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0233,
+				"name": "江赛阿措",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "1986.06-1991.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 8,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]
+	}
+}

@@ -81,13 +81,13 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 	color: blue;
 }
 body {
-	background: url('./picture.jpg') no-repeat;
+	background: url('../images/picture.jpg') no-repeat;
 }
 
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?t=1536304920361'),
-		 url('iconfont.ttf?t=1536304920361') format('truetype');
+	src: url('../iconfont/iconfont.eot?t=1536304920361'),
+		 url('../iconfont/iconfont.ttf?t=1536304920361') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 }

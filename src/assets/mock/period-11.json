@@ -1,0 +1,634 @@
+{
+	"ZW": {
+		"crews": [
+			{
+				"id": 0308,
+				"name": "王晓勇",
+				"sex": "",	
+				"station": "书记",	
+				"tenure": "2006.11-2008.02",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0309,
+				"name": "贾应忠",
+				"sex": "",	
+				"station": "书记",	
+				"tenure": "2008.02-2010.06",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0310,
+				"name": "旦科",
+				"sex": "",	
+				"station": "书记",	
+				"tenure": "2010.06-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0311,
+				"name": "王玉虎",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "2005.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0312,
+				"name": "文国栋",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "2010.04-2013.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0313,
+				"name": "东坝阿宝",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0314,
+				"name": "田惠源",
+				"sex": "",	
+				"station": "副书记",	
+				"tenure": "2006.12 -2010.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0315,
+				"name": "白加扎西",
+				"sex": "",	
+				"station": "常委",	
+				"tenure": "2006.04-2013.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0316,
+				"name": "王勇",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2010.04-2014.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0317,
+				"name": "毛育生",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0318,
+				"name": "邓尔平",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2006.11-2011.06",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0319,
+				"name": "罗松仁青",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0320,
+				"name": "李玉英",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0321,
+				"name": "吴勇",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2007.05-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0322,
+				"name": "方向东",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2008.03-2011.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0323,
+				"name": "仁青才仁",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2010.09-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0324,
+				"name": "刘传河",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2009.04-2014.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0325,
+				"name": "董晓淇",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2010.04-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0326,
+				"name": "吴德军",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2010.07-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0327,
+				"name": "张光连",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0328,
+				"name": "姚圣刚",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2006.11-2010.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0329,
+				"name": "扎西旺璋",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2006.11-2010.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0330,
+				"name": "齐振威",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2006.11-2007.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0331,
+				"name": "韩永胜",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2011.06-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0332,
+				"name": "李毅",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2011.10-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0333,
+				"name": "更太",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2011.10-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 11,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]	
+	},
+	"RD": {
+		"crews": [
+			{
+				"id": 0334,
+				"name": "昂格",
+				"sex": "",	
+				"station": "主任",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0335,
+				"name": "陈德杰",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0336,
+				"name": "布达哇",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0337,
+				"name": "尕松",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "2006.11-2010.01",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0338,
+				"name": "格勒",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "2006.11-2011.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0339,
+				"name": "葛嘎",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0340,
+				"name": "公保",
+				"sex": "",	
+				"station": "副主任",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 11,
+		"main_duties": "...",
+		"snapshot": []
+	},
+	"ZF": {
+		"crews": [
+			{
+				"id": 0341,
+				"name": "王玉虎",
+				"sex": "",	
+				"station": "州长",	
+				"tenure": "2005.12-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0342,
+				"name": "白加扎西",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2006.4-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0343,
+				"name": "王勇",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2009.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0344,
+				"name": "毛育生",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0345,
+				"name": "江永俄色",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0346,
+				"name": "布尕",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2006.05-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0347,
+				"name": "胡居正",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2006.05-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0348,
+				"name": "王秀琴",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2006.05-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0349,
+				"name": "张光连",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2010.07 -2012.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0350,
+				"name": "周洪源",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0351,
+				"name": "才仁丁沛",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2006.11-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0352,
+				"name": "李洪卫",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2010.05-2012.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0353,
+				"name": "才仁公保",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2011.10-2012.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0354,
+				"name": "杨志峰",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2009.11-	2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0355,
+				"name": "童光毅",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2009.11-	2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0356,
+				"name": "王森林",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2010.06-2011.04",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0357,
+				"name": "何占录",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2011.10-2012.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 11,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]
+	},
+	"ZX": {
+		"crews": [
+			{
+				"id": 0358,
+				"name": "昂江多杰",
+				"sex": "",	
+				"station": "主席",	
+				"tenure": "2001.04-2006.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0359,
+				"name": "江格",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.05-2006.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0360,
+				"name": "仲却",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.04-2006.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0361,
+				"name": "江赛阿措",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.04-2004",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0362,
+				"name": "仁青才仁",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.04-2006.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0363,
+				"name": "阿群",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.04-2006.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0364,
+				"name": "才仁",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.04-2006.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0365,
+				"name": "罗松仁青",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.04-2006.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0366,
+				"name": "加羊才旦",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.04-2006.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0367,
+				"name": "刘海光",
+				"sex": "",	
+				"station": "副主席",	
+				"tenure": "2001.04-2006.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 11,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]
+	}
+}

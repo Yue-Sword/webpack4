@@ -2,7 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const webpack = require('webpack');
+
+function resolve (dir) {
+  return path.join(__dirname, dir)
+}
 
 module.exports = {
   entry: {
@@ -12,14 +17,42 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     chunkFilename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    // publicPath: "/assets/",
   },
   module: {
     rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-transform-runtime']
+          }
+        }
+      },
+      {
+        test: /\.vue$/,
+        use: {
+          loader: 'vue-loader',
+          options: {
+            transformAssetUrls: {
+              video: ['src', 'poster'],
+              source: 'src',
+              img: 'src',
+              image: ['xlink:href', 'href'],
+              use: ['xlink:href', 'href']
+            }
+          }
+        }
+      },
       // 加载css样式
       {
         test: /\.css$/,
         use: [
+          'style-loader',
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
@@ -29,7 +62,8 @@ module.exports = {
               // hmr: process.env.NODE_ENV === 'development',
             },
           },
-          'css-loader',
+          'css-loader'
+          // 'postcss-loader'
         ]
       },
       // 加载图片
@@ -49,11 +83,13 @@ module.exports = {
     ]
   },
   plugins: [
+    new VueLoaderPlugin(),
     // 每次构建前清理 /dist 文件夹(https://github.com/johnagan/clean-webpack-plugin#options-and-defaults-optional);参数为对象类型，默认删除'dist'文件夹下的内容
     new CleanWebpackPlugin(),
     // 自动生成index.html,自动引入多个输出的bundle.js
     new HtmlWebpackPlugin({
-      title: 'Production'
+      title: 'Production',
+      template: './index.html'
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
@@ -74,5 +110,17 @@ module.exports = {
         },
       },
     },
+  },
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    modules: [
+      'src',
+      'node_modules'
+    ],
+    alias: {
+      'vue': 'vue/dist/vue.esm.js',
+      'vue$': 'vue/dist/vue.common.js',
+      '@utils': resolve('/src/utils')
+    }
   }
 };

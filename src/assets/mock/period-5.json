@@ -1,0 +1,321 @@
+{
+	"ZW": {
+		"crews": [
+			{
+				"id": 0083,
+				"name": "李恩普",
+				"sex": "",
+				"station": "书记",	
+				"tenure": "1971.03-1975.08",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0084,
+				"name": "于波",
+				"sex": "",
+				"station": "书记",	
+				"tenure": "1975.08-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0085,
+				"name": "于波",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1971.03-1975.08",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0086,
+				"name": "王朝献",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1971.03-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0087,
+				"name": "才学",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1971.03-1972.01",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0088,
+				"name": "吴斌",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1972.05-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0089,
+				"name": "陈进贤",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1972.05-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0090,
+				"name": "朱清明",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1973.11-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0091,
+				"name": "年治海",
+				"sex": "",
+				"station": "副书记",	
+				"tenure": "1973.11-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0092,
+				"name": "田溪",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1971.03-1973.03",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0093,
+				"name": "常殿魁",
+				"sex": "",				"station": "常委",	
+				"tenure": "1979.03-1980.12",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0094,
+				"name": "张贵根",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1971.03-1974.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0095,
+				"name": "卫懋权",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1971.03-1974.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0096,
+				"name": "陈进贤",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1971.03-1972.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0097,
+				"name": "徐金声",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1971.03-1971.11",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0098,
+				"name": "来西",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1971.03-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0099,
+				"name": "侯少卿",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1971.03-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0100,
+				"name": "巴桑卓玛",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "1973.11-1976.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 5,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]	
+	},
+	"RD": {
+		"crews": [],
+		"period": 5,
+		"main_duties": null,
+		"snapshot": []
+	},
+	"ZF": {
+		"crews": [
+			{
+				"id": 0101,
+				"name": "陈进贤",
+				"sex": "",
+				"station": "州长",	
+				"tenure": "1977.09-1979.01",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0102,
+				"name": "濮九康",
+				"sex": "",
+				"station": "副州长",	
+				"tenure": "1977.09-1979.01",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0103,
+				"name": "候少卿",
+				"sex": "",
+				"station": "副州长",	
+				"tenure": "1977.09-1981.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0104,
+				"name": "巴桑卓玛",
+				"sex": "",
+				"station": "副州长",	
+				"tenure": "1977.09-1981.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0105,
+				"name": "陆纯",
+				"sex": "",
+				"station": "副州长",	
+				"tenure": "1977.09-1981.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0106,
+				"name": "才培多杰",
+				"sex": "",
+				"station": "副州长",	
+				"tenure": "1977.09-1981.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 5,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]
+	},
+	"ZX": {
+		"crews": [
+			{
+				"id": 0107,
+				"name": "李恩普",
+				"sex": "",
+				"station": "主席",	
+				"tenure": "1965.10-1967.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0108,
+				"name": "仁庆",
+				"sex": "",
+				"station": "副主席",	
+				"tenure": "1965.10-1967.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0109,
+				"name": "扎西才旺多杰",
+				"sex": "",
+				"station": "副主席",	
+				"tenure": "1965.10-1967.05",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0110,
+				"name": "邓佳",
+				"sex": "",
+				"station": "副主席",	
+				"tenure": "1962.06-1963.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			},{
+				"id": 0111,
+				"name": "扎西才仁",
+				"sex": "",
+				"station": "副主席",	
+				"tenure": "1962.06-1963.10",
+				"more": {
+					"photo": "url",
+					"Profile": "..."
+				}
+			}
+		],
+		"period": 5,
+		"main_duties": "...",
+		"snapshot": ["url-1","url-2"]
+	}
+}
