@@ -1,9 +1,8 @@
 import axios from 'axios'
-// import { getContextPath } from 'utils'
 
 // 创建实例
 const service = axios.create({
-  baseURL: '../../static', //getContextPath(),
+  baseURL: '',
   timeout: 1000 * 60,
   headers: {
     'X-Requested-With': 'XMLHttpRequest',
@@ -36,7 +35,6 @@ const service = axios.create({
 // respone拦截器
 service.interceptors.response.use(
   response => {
-    const res = response.data
     // 成功的拦截
     return response.data
   },

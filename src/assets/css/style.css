@@ -81,7 +81,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 	color: blue;
 }
 body {
-	background: url('../images/picture.jpg') no-repeat;
+	background: url('../images/bg.jpg') no-repeat;
 }
 
 @font-face {

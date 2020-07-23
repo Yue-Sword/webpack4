@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 function resolve (dir) {
@@ -91,6 +92,11 @@ module.exports = {
       title: 'Production',
       template: './index.html'
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'static', to: 'static' }
+      ],
+    }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // all options are optional
@@ -103,7 +109,7 @@ module.exports = {
     splitChunks: {
       cacheGroups: {
         styles: {
-          name: 'styles',
+          name: 'style',
           test: /\.css$/,
           chunks: 'all',
           enforce: true,

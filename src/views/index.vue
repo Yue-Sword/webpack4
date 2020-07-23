@@ -15,7 +15,7 @@ export default {
   },
   mounted() {
     Ajax({
-      url: '../assets/mock/period-1.json'
+      url: '../../static/mock/period-12.json',
     }).then(data => {
       console.log(data)
     })
