@@ -54,6 +54,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
+          'vue-style-loader',
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
@@ -92,11 +93,9 @@ module.exports = {
       title: 'Production',
       template: './index.html'
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: 'static', to: 'static' }
-      ],
-    }),
+    new CopyPlugin([
+      { from: 'static', to: 'static' }
+    ]),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // all options are optional

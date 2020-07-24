@@ -81,7 +81,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 	color: blue;
 }
 body {
-	background: url('../images/bg.jpg') no-repeat;
+	background: url('../images/picture.jpg') no-repeat;
 }
 
 @font-face {
@@ -100,4 +100,14 @@ body {
 }
 .icon-yidongzujianicon:before {
 	content: "\e61d";
+}
+.main_duties {
+  float: left;
+  white-space: pre-line;
+  width: 400px;
+  height: 600px;
+  overflow: auto;
+}
+.main_duties::-webkit-scrollbar {
+  display: none;
 }
