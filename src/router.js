@@ -1,7 +1,8 @@
-import Vue from 'vue'
+// import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from './views'
 
+const Vue = window.Vue;
 Vue.use(VueRouter)
 
 

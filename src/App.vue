@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ys-electronic-board">
     <router-view></router-view>
   </div>
 </template>
@@ -8,6 +8,9 @@
 export default {
   data () {
     return {}
+  },
+  mounted() {
+  	
   }
 }
 </script>
