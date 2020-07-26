@@ -1,7 +1,7 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "an electronic display board",
   "private": true,
   "sideEffects": false,
   "scripts": {

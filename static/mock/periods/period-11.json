@@ -284,21 +284,21 @@
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2006.11-2012.03",
-				"more": false
+				"more": true
 			},{
 				"id": "0346",
 				"name": "布尕",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2006.05-2012.03",
-				"more": false
+				"more": true
 			},{
 				"id": "0347",
 				"name": "胡居正",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2006.05-2012.03",
-				"more": false
+				"more": true
 			},{
 				"id": "0348",
 				"name": "王秀琴",
@@ -321,12 +321,12 @@
 				"tenure": "2006.11-2012.03",
 				"more": true
 			},{
-				"id": "0351",
+				"id": "0296",
 				"name": "才仁丁沛",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2006.11-2012.03",
-				"more": false
+				"more": true
 			},{
 				"id": "0352",
 				"name": "李洪卫",
@@ -340,7 +340,7 @@
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2011.10-2012.04",
-				"more": false
+				"more": true
 			},{
 				"id": "0354",
 				"name": "杨志峰",
@@ -368,7 +368,7 @@
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2011.10-2012.03",
-				"more": false
+				"more": true
 			}
 		],
 		"period": 11,
