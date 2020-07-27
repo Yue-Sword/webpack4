@@ -35,7 +35,7 @@
 				"sex": "",	
 				"station": "常委",	
 				"tenure": "1966.03-1996.05",
-				"more": false
+				"more": true
 			},{
 				"id": "0070",
 				"name": "王子云",
@@ -68,7 +68,7 @@
 		],
 		"period": 4,
 		"main_duties": "...",
-		"snapshot": ["url-1","url-2"]	
+		"snapshot": []	
 	},
 	"RD": {
 		"crews": [],
@@ -100,17 +100,17 @@
 				"tenure": "1965.10-1972.05",
 				"more": false
 			},{
-				"id": "0077",
+				"id": "0069",
 				"name": "陈进贤",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "1965.10-1967.11",
-				"more": false
+				"more": true
 			}
 		],
 		"period": 4,
 		"main_duties": "...",
-		"snapshot": ["url-1","url-2"]
+		"snapshot": ["zf-04-001.tif"]
 	},
 	"ZX": {
 		"crews": [
@@ -153,6 +153,6 @@
 		],
 		"period": 4,
 		"main_duties": "...",
-		"snapshot": ["url-1","url-2"]
+		"snapshot": ["zx-03-001.tif"]
 	}
 }

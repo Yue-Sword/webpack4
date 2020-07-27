@@ -42,7 +42,7 @@
 				"sex": "",	
 				"station": "副书记",	
 				"tenure": "1980.12-1982.06",
-				"more": false
+				"more": true
 			},{
 				"id": "0118",
 				"name": "濮九康",
@@ -56,7 +56,7 @@
 				"sex": "",	
 				"station": "副书记",	
 				"tenure": "1983.08-1986.05",
-				"more": false
+				"more": true
 			},{
 				"id": "0120",
 				"name": "翟松天",
@@ -159,7 +159,7 @@
 		],
 		"period": 6,
 		"main_duties": "...",
-		"snapshot": ["url-1","url-2"]	
+		"snapshot": []	
 	},
 	"RD": {
 		"crews": [
@@ -176,7 +176,7 @@
 				"sex": "",	
 				"station": "主任",	
 				"tenure": "1983.12-1986.06",
-				"more": false
+				"more": true
 			},{
 				"id": "0136",
 				"name": "司维洪",
@@ -192,12 +192,12 @@
 				"tenure": "1981.05-1986.06",
 				"more": false
 			},{
-				"id": "0138",
+				"id": "0135",
 				"name": "弋复元",
 				"sex": "",	
 				"station": "副主任",	
 				"tenure": "1981.05-1983.12",
-				"more": false
+				"more": true
 			},{
 				"id": "0139",
 				"name": "米扎西",
@@ -230,24 +230,24 @@
 		],
 		"period": 6,
 		"main_duties": "...",
-		"snapshot": []
+		"snapshot": ["rd-06-001.JPG","rd-06-002.JPG","rd-06-003.JPG","rd-06-004.JPG"]
 	},
 	"ZF": {
 		"crews": [
 			{
-				"id": "0143",
+				"id": "0117",
 				"name": "伊本干",
 				"sex": "",	
 				"station": "州长",	
 				"tenure": "1981.05-1982.06",
-				"more": false
+				"more": true
 			},{
-				"id": "0144",
+				"id": "0119",
 				"name": "王文明",
 				"sex": "",	
 				"station": "州长",	
 				"tenure": "1983.08-1986.06",
-				"more": false
+				"more": true
 			},{
 				"id": "0145",
 				"name": "才培多杰",
@@ -301,7 +301,7 @@
 		],
 		"period": 6,
 		"main_duties": "...",
-		"snapshot": ["url-1","url-2"]
+		"snapshot": ["zf-06-001.tif"]
 	},
 	"ZX": {
 		"crews": [
@@ -337,6 +337,6 @@
 		],
 		"period": 6,
 		"main_duties": "...",
-		"snapshot": ["url-1","url-2"]
+		"snapshot": ["zx-06-001.tif", "zx-06-002.tif"]
 	}
 }
