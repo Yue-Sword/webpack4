@@ -184,12 +184,12 @@
 				"tenure": "2015.7-2016.11",
 				"more": true
 			},{
-				"id": "0394",
+				"id": "0357",
 				"name": "何占录",
 				"sex": "",
 				"station": "常委",	
 				"tenure": "2015.7-2016.08",
-				"more": false
+				"more": true
 			},{
 				"id": "0395",
 				"name": "桑文俊",
@@ -363,12 +363,12 @@
 				"tenure": "2010.05-2012.11",
 				"more": true
 			},{
-				"id": "0417",
+				"id": "0357",
 				"name": "何占录",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2011.10-2015.07",
-				"more": false
+				"more": true
 			},{
 				"id": "0418",
 				"name": "张晓军",
@@ -419,12 +419,12 @@
 				"tenure": "2014.08-2016.10",
 				"more": true
 			},{
-				"id": "0425",
+				"id": "0353",
 				"name": "才仁公保",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2011.10-2016.10",
-				"more": false
+				"more": true
 			},{
 				"id": "0426",
 				"name": "韩三存",
@@ -438,7 +438,7 @@
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2012.03-2014.12",
-				"more": false
+				"more": true
 			},{
 				"id": "0393",
 				"name": "陈永祥",
@@ -452,7 +452,7 @@
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "2015.12-2016.11",
-				"more": false
+				"more": true
 			}
 		],
 		"period": 12,
