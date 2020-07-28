@@ -1,7 +1,29 @@
 <template>
   <div class="page clearfix">
-    <!-- <div class="header">玉树四大领导班子</div> -->
     <div class="container">
+<!--       <div class="class0">
+        <div class="class1 left">
+          <img src="../assets/images/touxiang.jpg" alt="#" style="display: block;max-height:150px;max-width: 150px;">
+        </div>
+        <div class="class2">
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+    </div> -->
       <div class="part" v-for="option in options" :key="option.groups">
         <div class="content">
 <!--           <div class="title">中共玉树州第九届州委领导</div> -->
@@ -30,9 +52,9 @@
           <div class="snapshot">
             <label class="glimpse_label">工作掠影</label>
             <el-carousel :autoplay="false" height="200px">
-              <el-carousel-item v-for="(item, index) in glimpses" :key="index">
+              <el-carousel-item v-for="(item, index) in option.snapshot" :key="index">
                 <div class="glimpse-box">
-                  <img :src="item.url"/>
+                  <img :src="item"/>
                 </div>
               </el-carousel-item>
             </el-carousel>
@@ -57,9 +79,9 @@ export default {
     return {
       options: [],
       glimpses: [
-        {url: "/static/mock/glimpses/zw-01-001.JPG", name: "第一届001"},
-        {url: "/static/mock/glimpses/zw-01-002.JPG", name: "第一届002"},
-        {url: "/static/mock/glimpses/zw-01-003.JPG", name: "第一届003"}
+        // {url: "/static/mock/glimpses/zw-01-001.JPG", name: "第一届001"},
+        // {url: "/static/mock/glimpses/zw-01-002.JPG", name: "第一届002"},
+        // {url: "/static/mock/glimpses/zw-01-003.JPG", name: "第一届003"}
       ],
       dialogVisible: false,
       main_duties: ''
@@ -89,9 +111,26 @@ export default {
       _this.options = [];
       for(let key in data) {
         data[key]["groups"] = key;
+        data[key].snapshot = data[key].snapshot.map(item =>{
+          console.log(item)
+          item = "/static/mock/glimpses/" + key.toLowerCase() + "/" + item;
+          return item
+        })
         _this.options.push(data[key])
       }
     })
   }
 }
 </script>
+<style>
+.class0 {
+  margin: 10px 17px;
+}
+.class1 {
+  margin: 10px 20px 0;
+}
+.class2 div {
+  text-indent: 2em;
+  text-align: justify;
+}
+</style>

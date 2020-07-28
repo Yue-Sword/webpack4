@@ -138,7 +138,7 @@
 		],
 		"period": 1,
 		"main_duties": "...",
-		"snapshot": ["zf-01-001.JPG", "zf-01-002.tif"]
+		"snapshot": ["zf-01-001.JPG", "zf-01-002.png"]
 	},
 	"ZX": {
 		"crews": [
@@ -188,6 +188,6 @@
 		],
 		"period": 1,
 		"main_duties": "...",
-		"snapshot": ["zx-01-001.jpg","zx-01-002.tif"]
+		"snapshot": ["zx-01-001.jpg","zx-01-002.png"]
 	}
 }

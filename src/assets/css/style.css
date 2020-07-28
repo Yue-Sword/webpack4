@@ -78,12 +78,14 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 
 .ys-electronic-board {
-	min-width: 1920px;
-	min-height: 1080px;
-/*	width: 100%;
-	min-height: 100vh;*/
-	background: url('../images/bg.jpg') no-repeat;
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+/*	width: 5760px;
+	min-height: 2160px;*/
+	background: url('../images/picture.jpg') no-repeat;
 	background-size: 100% 100%;
+	overflow: hidden;
 }
 
 @font-face {
@@ -116,11 +118,16 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 
 .page {
+	margin-top: 200px;
 /*overflow: hidden;
 	position: absolute;
   left: 0;
   bottom: 60px;
   width: 100%;*/
+/*  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);*/
 }
 .header {
 	margin: 40px auto;
@@ -135,12 +142,13 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   flex: 1;
   padding: 17px;
   margin: 0 20px;
-  background: #BA0003;
-  border-radius: 20px;
+  border: 1px solid #000;
+/*  background: #BA0003;
+  border-radius: 20px;*/
 }
 .content {
 	height: 100%;
-	border: 4px solid #FCF5BE;
+/*	border: 4px solid #FCF5BE;*/
 }
 .content::-webkit-scrollbar {
   display: none;
