@@ -51,13 +51,16 @@
           </div>
           <div class="snapshot">
             <label class="glimpse_label">工作掠影</label>
-            <el-carousel :autoplay="false" height="200px">
+<!--             <el-carousel :autoplay="false" height="200px" v-if="option.snapshot.length">
               <el-carousel-item v-for="(item, index) in option.snapshot" :key="index">
                 <div class="glimpse-box">
                   <img :src="item"/>
                 </div>
-              </el-carousel-item>
+              </el-carousel-item> -->
             </el-carousel>
+            <div>
+              <img src="../assets/images/empty.png">
+            </div>
           </div>
         </div>
       </div>
