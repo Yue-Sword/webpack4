@@ -67,7 +67,7 @@
 			}
 		],
 		"period": 4,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": []	
 	},
 	"RD": {
@@ -109,7 +109,7 @@
 			}
 		],
 		"period": 4,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zf-04-001.png"]
 	},
 	"ZX": {
@@ -152,7 +152,7 @@
 			}
 		],
 		"period": 4,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zx-03-001.png"]
 	}
 }

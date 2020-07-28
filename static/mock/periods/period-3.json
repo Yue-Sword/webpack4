@@ -124,7 +124,7 @@
 			}
 		],
 		"period": 3,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": []
 	},
 	"ZX": {
@@ -181,7 +181,7 @@
 			}
 		],
 		"period": 3,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zx-01-002.png", "zx-03-001.png"]
 	}
 }

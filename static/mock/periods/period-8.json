@@ -275,7 +275,7 @@
 			}
 		],
 		"period": 8,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zf-08-001.JPG","zf-08-002.JPG","zf-08-003.JPG","zf-08-004.JPG"]
 	},
 	"ZX": {
@@ -318,7 +318,7 @@
 			}
 		],
 		"period": 8,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": []
 	}
 }

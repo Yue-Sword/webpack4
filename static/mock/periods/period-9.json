@@ -95,7 +95,7 @@
 			}
 		],
 		"period": 9,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zw-09-001.JPG"]	
 	},
 	"RD": {
@@ -231,7 +231,7 @@
 			}
 		],
 		"period": 9,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zf-09-001.jpg","zf-09-002.png"]
 	},
 	"ZX": {
@@ -288,7 +288,7 @@
 			}
 		],
 		"period": 9,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": []
 	}
 }

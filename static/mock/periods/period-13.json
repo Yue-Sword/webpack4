@@ -151,7 +151,7 @@
 			}
 		],
 		"period": 13,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zw-13-001.jpg","zw-13-002.jpeg","zw-13-003.jpg","zw-13-004.jpg","zw-13-005.jpg","zw-13-006.jpg","zw-13-007.JPG","zw-13-008.jpg","zw-13-009.jpg"]	
 	},
 	"RD": {
@@ -208,7 +208,7 @@
 			}
 		],
 		"period": 13,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["rd-13-001.JPG","rd-13-002.JPG","rd-13-003.jpg","rd-13-004.JPG","rd-13-005.jpg","rd-13-006.JPG","rd-13-007.jpg","rd-13-008.jpg","rd-13-009.JPG","rd-13-010.jpg","rd-13-011.jpg","rd-13-012.jpg","rd-13-013.jpg"]
 	},
 	"ZF": {
@@ -335,7 +335,7 @@
 			}
 		],
 		"period": 13,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zf-13-001.JPG","zf-13-002.jpg","zf-13-003.jpg","zf-13-004.jpg","zf-13-005.JPG","zf-13-006.jpg","zf-13-007.jpg","zf-13-008.jpg","zf-13-009.jpg","zf-13-010.jpg"]
 	},
 	"ZX": {
@@ -406,7 +406,7 @@
 			}
 		],
 		"period": 13,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zx-13-001.jpg"]
 	}
 }

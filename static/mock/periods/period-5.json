@@ -186,7 +186,7 @@
 			}
 		],
 		"period": 5,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zf-05-001.png"]
 	},
 	"ZX": {
@@ -229,7 +229,7 @@
 			}
 		],
 		"period": 5,
-		"main_duties": "...",
+		"main_duties": "",
 		"snapshot": ["zx-05-001.png"]
 	}
 }
