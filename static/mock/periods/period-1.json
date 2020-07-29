@@ -74,12 +74,14 @@
 			}
 		],
 		"period": 1,
+		"time": "1956年 至 1959年8月",
 		"main_duties": "",
 		"snapshot": ["zw-01-001.JPG", "zw-01-002.JPG", "zw-01-003.JPG"]	
 	},
 	"RD": {
 		"crews": [],
 		"period": 1,
+		"time": "",
 		"main_duties": null,
 		"snapshot": []
 	},
@@ -137,6 +139,7 @@
 			}
 		],
 		"period": 1,
+		"time": "1958年12月 至 1960年10月",
 		"main_duties": "",
 		"snapshot": ["zf-01-001.JPG", "zf-01-002.png"]
 	},
@@ -187,6 +190,7 @@
 			}
 		],
 		"period": 1,
+		"time": "1958年 至 1959年10月",
 		"main_duties": "",
 		"snapshot": ["zx-01-001.jpg","zx-01-002.png"]
 	}

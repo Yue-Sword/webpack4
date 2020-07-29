@@ -14,47 +14,68 @@
       <div class="part" v-for="option in options" :key="option.group">
         <div class="content">
           <h1 class="title">{{getTitle(option)}}</h1>
-            <template v-if="!(option.group == 'RD' && period < 6)">
-              <div class="crews">
-                <div class="member clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index, option.group)">
-                  <span class="station">{{item.station}}</span>
-                  <span class="name">{{item.name}}</span>
-                  <span class="tenure">{{item.tenure}}</span>
-                </div>
+          <template v-if="!(option.group == 'RD' && period < 6)">
+            <div class="time">{{getTime(option)}}</div>
+            <div class="crews">
+              <div class="member clearfix" :class="{'warning-color': item.id === '0000'}" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index, option.group)">
+                <span class="station">{{item.station}}</span>
+                <span class="name">{{item.name}}</span>
+                <span class="tenure">{{item.tenure}}</span>
               </div>
-              <div class="main_duty" v-if="option.main_duties">
-                <label class="main_duty_label">工作内容</label>
-                <div class="el-form-item__content" style="margin-left: 80px;height:40px;">
-                  <el-link @click="showDetails(option.main_duties)">查看详情</el-link>
-                </div>
+            </div>
+            <div class="main_duty">
+              <div class="main_duty_label">工作内容</div>
+              <el-link 
+                :title="option.main_duties?'':'数据采集中，暂无数据'"
+                @click="showDetails(option.main_duties, 'main_duties')" 
+                class="main_duty_link" 
+                :disabled="!option.main_duties">
+                查看详情
+                <i class="el-icon--right el-icon-view" v-if="option.main_duties"></i>
+                <i class="el-icon--right el-icon-warning-outline" v-else></i>
+              </el-link>
+            </div>
+            <div class="main_duty">
+              <div class="main_duty_label">工作总结</div>
+              <el-link 
+                :title="option.summary?'':'数据采集中，暂无数据'"
+                @click="showDetails(option.summary, 'summary')" 
+                class="main_duty_link" 
+                :disabled="!option.summary">
+                查看详情
+                <i class="el-icon--right el-icon-view" v-if="option.summary"></i>
+                <i class="el-icon--right el-icon-warning-outline" v-else></i>
+              </el-link>
+            </div>
+            <div class="snapshot">
+              <div class="glimpse_label">工作掠影</div>
+              <el-carousel :autoplay="false" height="400px" v-if="option.snapshot.length">
+                <el-carousel-item v-for="(item, index) in option.snapshot" :key="index">
+                  <div class="glimpse-box">
+                    <el-image :src="item" fit="cover"></el-image>
+                  </div>
+                </el-carousel-item>
+              </el-carousel>
+              <div  class="glimpses-empty" v-else>
+                <el-image>
+                  <div slot="error" class="image-slot" style="text-align: center;">
+                    <i class="el-icon-picture-outline" style="font-size: 100px;"></i>
+                    <div class="empty-text">数据采集中，暂无数据</div>
+                  </div>
+                </el-image>
               </div>
-              <div class="snapshot">
-                <div class="glimpse_label">工作掠影</div>
-                <el-carousel :autoplay="false" height="400px" type="card" v-if="option.snapshot.length">
-                  <el-carousel-item v-for="(item, index) in option.snapshot" :key="index">
-                    <div class="glimpse-box">
-                      <el-image :src="item" fit="cover" lazy></el-image>
-                    </div>
-                  </el-carousel-item>
-                </el-carousel>
-                <div  class="glimpses-empty" v-else>
-                  <img src="../assets/images/empty.png">
-                  <div>暂无数据</div>
-                </div>
-              </div>
-            </template>
-            <template v-else>
-              <div>
-                特别说明：玉树州六届人大一次会议以前，均未设立常设机构，闭会期间，其职能由州人民委员会行使，1981年5月自治州第六届人民代表大会第一次会议选举产生了它的常设机关---州人民代表大会常务委员会。
-              </div>
-            </template>
+            </div>
+          </template>
+          <template v-else>
+            <div class="explain" v-html="explainText"></div>
+          </template>
         </div>
       </div>
     </div>
     <el-dialog
-      title="工作内容"
+      :title="detailTitle"
       :visible.sync="main_duty_visible"
-      width="50%"
+      width="900px"
       center
       append-to-body
       top="430px"
@@ -64,7 +85,7 @@
     <el-dialog
       :title="profileTile"
       :visible.sync="profile_visible"
-      width="50%"
+      width="900px"
       center
       append-to-body
       top="430px"
@@ -108,7 +129,8 @@ export default {
       curGroup: null,
       hasPre: false,
       hasNext: false,
-      test: ["/static/images/1.png","/static/images/2.png","/static/images/3.png","/static/images/4.png","/static/images/5.png"]
+      detailTitle: '',
+      explainText: '<div>特别说明：</div><div class="section">玉树州六届人大一次会议以前，均未设立常设机构，闭会期间，其职能由州人民委员会行使，1981年5月自治州第六届人民代表大会第一次会议选举产生了它的常设机关---州人民代表大会常务委员会。</div>'
     }
   },
   computed:{
@@ -120,22 +142,42 @@ export default {
       let title = '';
       switch(option.group) {
         case 'ZW':
-          title = "中共玉树州第" + this.china[this.period - 1] + "届州委会领导";
+          title = "历届州委会领导";
           break;
         case 'RD':
-          title = "中共玉树州第" + this.china[this.period - 1] + "届人大领导";
+          title = "历届人大领导";
           break;
         case 'ZF':
-          title = "中共玉树州第" + this.china[this.period - 1] + "届政府领导";
+          title = "历届政府领导";
           break;
         case 'ZX':
-          title = "中共玉树州第" + this.china[this.period - 1] + "届政协领导";
+          title = "历届政协领导";
           break;
       }
       return title
     },
+    // 获取任期时间
+    getTime(option) {
+      let time = '';
+      switch(option.group) {
+        case 'ZW':
+          time = "玉树州第" + this.china[this.period - 1] + "届州委委员会： " + option.time;
+          break;
+        case 'RD':
+          time = "玉树州第" + this.china[this.period - 1] + "届人大常委会： " + option.time;
+          break;
+        case 'ZF':
+          time = "玉树州第" + this.china[this.period - 1] + "人代会： " + option.time;
+          break;
+        case 'ZX':
+          time = "玉树州第" + this.china[this.period - 1] + "届政协委员会" + option.time;
+          break;
+      }
+      return time
+    },
     // 个人简介
     showProfile(item, index, group) {
+      if(item.id === '0000') return;
       this.curPersonIndex = index;
       this.curGroup = group;
       this.hasPre = this.checkPre();
@@ -156,26 +198,19 @@ export default {
       } else {
          this.$notify({
           title: item.name,
-          message: '数据搜集中，暂无数据',
+          message: '数据采集中，暂无数据',
           type: 'warning',
           duration: '1000'
         });
       }
     },
     // 工作内容
-    showDetails(text) {
-      if(text == "...") {
-        this.$confirm('数据搜集中，暂无数据', '工作内容', {
-          confirmButtonText: '知道了',
-          type: 'warning',
-          center: true
-        })
-      }else {
-        this.main_duty_visible = true;
-        text = "<div class='section'>" + text + "</div>"
-        text = text.replace(/\n/g, "\n</div><div class='section'>");
-        this.main_duties = text;
-      }
+    showDetails(text, type) {
+      this.detailTitle = type === "main_duties" ? "工作内容" : "工作总结";
+      this.main_duty_visible = true;
+      text = "<div class='section'>" + text + "</div>"
+      text = text.replace(/\n/g, "\n</div><div class='section'>");
+      this.main_duties = text;
     },
     // 下一届
     nextPeriod() {
@@ -289,7 +324,7 @@ export default {
         text = text.replace(/\n/g, "\n</div><div class='section'>");
         this.profile.profile = text;
       } else {
-        this.profile.profile = '数据搜集中，暂无数据'
+        this.profile.profile = '数据采集中，暂无数据'
       }
     }
   },

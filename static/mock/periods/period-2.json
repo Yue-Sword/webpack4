@@ -81,12 +81,14 @@
 			}
 		],
 		"period": 2,
+		"time": "1959年8月 至 1963年10月",
 		"main_duties": "",
 		"snapshot": ["zw-02-001.JPG"]
 	},
 	"RD": {
 		"crews": [],
 		"period": 2,
+		"time": "",
 		"main_duties": null,
 		"snapshot": []
 	},
@@ -130,6 +132,7 @@
 			}
 		],
 		"period": 2,
+		"time": "1960年10月 至 1963年5月",
 		"main_duties": "",
 		"snapshot": []
 	},
@@ -159,6 +162,7 @@
 			}
 		],
 		"period": 2,
+		"time": "1959年10月 至 1961年11月",
 		"main_duties": "",
 		"snapshot": ["zx-02-001.JPG", "zx-01-002.png"]
 	}
