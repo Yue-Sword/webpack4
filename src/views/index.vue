@@ -1,24 +1,19 @@
 <template>
 <div class="period">
   <!-- Next period -->
-  <el-button 
-    class="next-button" 
-    icon="el-icon-arrow-right"
-    v-if="period < 14" 
-    @click="nextPeriod"
-    >下一届</el-button>
+  <div class="aside-nav bounceInUp animated next-button" v-if="period < 14" @click="nextPeriod">
+    <span class="aside-menu"><i class="el-icon-arrow-right"></i></span>
+  </div>
   <!-- Previous period -->
-  <el-button 
-    class="previous-button" 
-    icon="el-icon-arrow-left" 
-    v-if="period > 1" 
-    @click="previousPeriod"
-    >上一届</el-button>
+  <div class="aside-nav bounceInUp animated previous-button" v-if="period > 1" @click="previousPeriod">
+    <span class="aside-menu"><i class="el-icon-arrow-left "></i></span>
+  </div>
+  <!-- Previous period -->
   <div class="page clearfix">
     <div class="container">
       <div class="part" v-for="option in options" :key="option.group">
         <div class="content">
-          <div class="title">{{getTitle(option)}}</div>
+          <h1 class="title">{{getTitle(option)}}</h1>
             <template v-if="!(option.group == 'RD' && period < 6)">
               <div class="crews">
                 <div class="member clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index, option.group)">
@@ -34,11 +29,11 @@
                 </div>
               </div>
               <div class="snapshot">
-                <label class="glimpse_label">工作掠影</label>
-                <el-carousel :autoplay="false" height="200px" v-if="option.snapshot.length">
+                <div class="glimpse_label">工作掠影</div>
+                <el-carousel :autoplay="false" height="400px" type="card" v-if="option.snapshot.length">
                   <el-carousel-item v-for="(item, index) in option.snapshot" :key="index">
                     <div class="glimpse-box">
-                      <img :src="item"/>
+                      <el-image :src="item" fit="cover" lazy></el-image>
                     </div>
                   </el-carousel-item>
                 </el-carousel>
@@ -61,7 +56,9 @@
       :visible.sync="main_duty_visible"
       width="50%"
       center
-      append-to-body>
+      append-to-body
+      top="430px"
+      custom-class="dialog_custom_class">
       <div class="main_duties" v-html="main_duties"></div>
     </el-dialog>
     <el-dialog
@@ -69,11 +66,18 @@
       :visible.sync="profile_visible"
       width="50%"
       center
-      append-to-body>
+      append-to-body
+      top="430px"
+      custom-class="dialog_custom_class">
       <div class="profile">
         <div class="profile_photo left">
-          <img :src="profile.photo" v-if="profile.photo">
-          <img src="../assets/images/touxiang.jpg" v-else>
+          <el-image
+            style="width: 150px; height: 150px"
+            :src="profile.photo"
+            fit="cover"
+            lazy
+            v-if="profile.photo"></el-image>
+          <img src="../assets/images/touxiang.jpg" v-else/>
         </div>
         <div class="profile_content" v-html="profile.profile"></div>
       </div>
@@ -103,7 +107,8 @@ export default {
       curPersonIndex: -1,
       curGroup: null,
       hasPre: false,
-      hasNext: false
+      hasNext: false,
+      test: ["/static/images/1.png","/static/images/2.png","/static/images/3.png","/static/images/4.png","/static/images/5.png"]
     }
   },
   computed:{

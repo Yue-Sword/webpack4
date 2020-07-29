@@ -127,5 +127,8 @@ module.exports = {
       'vue$': 'vue/dist/vue.common.js',
       '@utils': resolve('/src/utils')
     }
+  },
+  externals: {
+    jquery: 'jQuery'
   }
 };
