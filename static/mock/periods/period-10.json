@@ -129,7 +129,7 @@
 				"sex": "",	
 				"station": "副主任",	
 				"tenure": "2001.05-2006.11",
-				"more": false
+				"more": true
 			},{
 				"id": "0288",
 				"name": "葛嘎",
@@ -219,11 +219,11 @@
 				"more": false
 			},{
 				"id": "0299",
-				"name": "布达哇",
+				"name": "王秀琴",
 				"sex": "",	
 				"station": "副州长",	
-				"tenure": "2001.05-2006.11",
-				"more": false
+				"tenure": "2001.05-2005.12",
+				"more": true
 			}
 		],
 		"period": 10,

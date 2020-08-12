@@ -167,7 +167,7 @@ export default {
           time = "玉树州第" + this.china[this.period - 1] + "届人大常委会： " + option.time;
           break;
         case 'ZF':
-          time = "玉树州第" + this.china[this.period - 1] + "人代会： " + option.time;
+          time = "玉树州第" + this.china[this.period - 1] + "届人代会： " + option.time;
           break;
         case 'ZX':
           time = "玉树州第" + this.china[this.period - 1] + "届政协委员会" + option.time;

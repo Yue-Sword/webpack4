@@ -148,6 +148,20 @@
 				"station": "常委",	
 				"tenure": "2019.12-至今",
 				"more": true
+			},{
+				"id": "0498",
+				"name": "李玉斌",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2020.07-至今",
+				"more": false
+			},{
+				"id": "0474",
+				"name": "何勃",
+				"sex": "",
+				"station": "常委",	
+				"tenure": "2020.07-至今",
+				"more": true
 			}
 		],
 		"period": 13,
@@ -290,7 +304,7 @@
 				"name": "何勃",
 				"sex": "",	
 				"station": "副州长",	
-				"tenure": "2016.11-至今",
+				"tenure": "2016.11-2020.07",
 				"more": true
 			},{
 				"id": "0475",
@@ -334,6 +348,20 @@
 				"station": "副州长",	
 				"tenure": "2020.06-至今",
 				"more": false
+			},{
+				"id": "0474",
+				"name": "何勃",
+				"sex": "",	
+				"station": "常务副州长",	
+				"tenure": "2020.07-至今",
+				"more": true
+			},{
+				"id": "0499",
+				"name": "尼玛才仁",
+				"sex": "",	
+				"station": "副州长",	
+				"tenure": "2020.07-至今",
+				"more": false
 			}
 		],
 		"period": 13,
@@ -351,7 +379,7 @@
 				"tenure": "2012.03-2015.12",
 				"more": true
 			},{
-				"id": "0348",
+				"id": "0299",
 				"name": "王秀琴",
 				"sex": "",	
 				"station": "主席",	

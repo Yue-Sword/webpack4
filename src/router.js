@@ -1,6 +1,8 @@
 // import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from './views'
+import Page from './views/page'
+import Part from './views/part'
 
 const Vue = window.Vue;
 Vue.use(VueRouter)
@@ -9,8 +11,16 @@ Vue.use(VueRouter)
 export const constantRouterMap = [
   {
     name: 'home',
-    path: '/',
+    path: '/home',
     component: Index
+  },{
+    name: 'page',
+    path: '/',
+    component: Page
+  },{
+    name: 'part',
+    path: '/part',
+    component: Part
   },{
     path: '*',
     redirect: '/'
