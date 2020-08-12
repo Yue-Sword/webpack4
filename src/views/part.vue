@@ -1,7 +1,7 @@
 <template>
 <div class="container2">
 	<!-- Next period -->
-  <div class="aside-nav bounceInUp animated next-button" v-if="period < 13" @click="nextPeriod">
+  <div class="aside-nav bounceInUp animated next-button" v-if="(group != 'ZX' && period < 13) || (group == 'ZX' && period < 14)" @click="nextPeriod">
     <span class="aside-menu"><i class="el-icon-arrow-right"></i></span>
   </div>
   <!-- Previous period -->
