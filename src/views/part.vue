@@ -2,9 +2,12 @@
 <div class="container2">
   <div class="aside-nav bounceInUp animated">
     <label for="" class="aside-menu" title="菜单">菜单</label>
-    <a href="javascript:void(0)" class="menu-item menu-first" :class="[{'disabled': period == 1}]" @click="previousPeriod">上一步</a>
+    <a href="javascript:void(0)" 
+      class="menu-item menu-first" 
+      :class="[{'disabled': (group != 'RD' && period == 1) || (group == 'RD'&& period == 6) }]" 
+      @click="previousPeriod">上一届</a>
     <a href="javascript:void(0)" class="menu-item menu-second" @click="backHome">首页</a>
-    <a href="javascript:void(0)" class="menu-item menu-third" :class="[{'disabled': !((group != 'ZX' && period < 13) || (group == 'ZX' && period < 14))}]" @click="nextPeriod">下一步</a>
+    <a href="javascript:void(0)" class="menu-item menu-third" :class="[{'disabled': !((group != 'ZX' && period < 13) || (group == 'ZX' && period < 14))}]" @click="nextPeriod">下一届</a>
   </div>
   <div class="part2 part-alone">
     <div class="content2">
@@ -116,7 +119,6 @@ export default {
       profile_visible: false,
       profile: '',
       period: 1,
-      china: ['一','二','三','四','五','六','七','八','九','十','十一','十二','十三', '十四'],
       curPersonIndex: -1,
       hasPre: false,
       hasNext: false,
@@ -208,7 +210,7 @@ export default {
     },
     // 上一届
     previousPeriod() {
-      if(this.period == 1) return;
+      if((this.group != 'RD' && this.period == 1)|| (this.group == 'RD' && this.period == 6)) return;
       this.period--;
       this.getPeriodData();
     },
