@@ -1,12 +1,18 @@
 <template>
 <div class="container2">
 	<!-- Next period -->
-  <div class="aside-nav bounceInUp animated next-button" v-if="(group != 'ZX' && period < 13) || (group == 'ZX' && period < 14)" @click="nextPeriod">
+<!--   <div class="aside-nav bounceInUp animated next-button" v-if="(group != 'ZX' && period < 13) || (group == 'ZX' && period < 14)" @click="nextPeriod">
     <span class="aside-menu"><i class="el-icon-arrow-right"></i></span>
-  </div>
+  </div> -->
   <!-- Previous period -->
-  <div class="aside-nav bounceInUp animated previous-button" v-if="period > 1" @click="previousPeriod">
+<!--   <div class="aside-nav bounceInUp animated previous-button" v-if="" @click="previousPeriod">
     <span class="aside-menu"><i class="el-icon-arrow-left "></i></span>
+  </div> -->
+  <div class="aside-nav bounceInUp animated">
+    <label for="" class="aside-menu" title="菜单">菜单</label>
+    <a href="javascript:void(0)" class="menu-item menu-first" :class="[{'disabled': period == 1}]" @click="previousPeriod">上一步</a>
+    <a href="javascript:void(0)" class="menu-item menu-second" @click="backHome">首页</a>
+    <a href="javascript:void(0)" class="menu-item menu-third" :class="[{'disabled': !((group != 'ZX' && period < 13) || (group == 'ZX' && period < 14))}]" @click="nextPeriod">下一步</a>
   </div>
   <div class="part2 part-alone">
     <div class="content2">
@@ -204,13 +210,18 @@ export default {
     },
     // 下一届
     nextPeriod() {
+      if(!((group != 'ZX' && period < 13) || (group == 'ZX' && period < 14))) return
       this.period++;
       this.getPeriodData();
     },
     // 上一届
     previousPeriod() {
+      if(this.period == 1) return;
       this.period--;
       this.getPeriodData();
+    },
+    backHome() {
+      this.$router.push('/');
     },
     prePerson() {
       let idx = [];
