@@ -407,7 +407,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   position: absolute;
   width: 80px;
   height: 80px;
-  background-color: #FF7676;
+  background-color: rgba(31,45,61,.11);/*#FF7676*/
   left: 0;
   top: 0;
   right: 0;
@@ -418,7 +418,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   -webkit-border-radius: 50%;
   border-radius: 50%;
   text-decoration: none;
-  color: #fff;
+  color: transparent;
   -webkit-transition: background .5s, -webkit-transform .6s;
   transition: background .5s, -webkit-transform .6s;
   -moz-transition: transform .6s, background .5s, -moz-transform .6s;
@@ -427,10 +427,10 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   font-size: 14px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
-.aside-nav .menu-item:hover {
+.aside-nav .menu-item:not(.disabled):hover {
   background: #A9C734;
 }
 
@@ -446,31 +446,35 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .aside-nav:hover .aside-menu {
   -webkit-animation: jello 1s;
   -moz-animation: jello 1s;
-  animation: jello 1s
+  animation: jello 1s;
 }
 
 .aside-nav:hover .menu-first {
   -webkit-transform: translate3d(0, -120%, 0);
   -moz-transform: translate3d(0, -120%, 0);
-  transform: translate3d(0, -120%, 0)
+  transform: translate3d(0, -120%, 0);
+  color: #fff;
 }
 
 .aside-nav:hover .menu-second {
   -webkit-transform: translate3d(-120%, -70%, 0);
   -moz-transform: translate3d(-120%, -70%, 0);
-  transform: translate3d(-120%, -70%, 0)
+  transform: translate3d(-120%, -70%, 0);
+  color: #fff;
 }
 
 .aside-nav:hover .menu-third {
   -webkit-transform: translate3d(-120%, 70%, 0);
   -moz-transform: translate3d(-120%, 70%, 0);
-  transform: translate3d(-120%, 70%, 0)
+  transform: translate3d(-120%, 70%, 0);
+  color: #fff;
 }
 
 .aside-nav:hover .menu-fourth {
   -webkit-transform: translate3d(0, 135%, 0);
   -moz-transform: translate3d(0, 135%, 0);
-  transform: translate3d(0, 135%, 0)
+  transform: translate3d(0, 135%, 0);
+  color: #fff;
 }
 
 
