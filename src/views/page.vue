@@ -7,9 +7,14 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZW')">{{getTime(option, "ZW")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index)">
-            <span class="station">{{item.station}}</span>
-            <span class="name">{{item.name}}</span>
-            <span class="tenure">{{item.tenure}}</span>
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <div>
+              <span class="station">{{item.station}}</span>
+              <span class="name">{{item.name}}</span>
+            </div>
+            <div>
+              <span class="tenure">{{item.tenure}}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -22,9 +27,14 @@
         <el-link class="time2" title="查看详情"  @click="goto(option, 'RD')">{{getTime(option, "RD")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index)">
-            <span class="station">{{item.station}}</span>
-            <span class="name">{{item.name}}</span>
-            <span class="tenure">{{item.tenure}}</span>
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <div>
+              <span class="station">{{item.station}}</span>
+              <span class="name">{{item.name}}</span>
+            </div>
+            <div>
+              <span class="tenure">{{item.tenure}}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -37,9 +47,14 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZF')">{{getTime(option, "ZF")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index)">
-            <span class="station">{{item.station}}</span>
-            <span class="name">{{item.name}}</span>
-            <span class="tenure">{{item.tenure}}</span>
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <div>
+              <span class="station">{{item.station}}</span>
+              <span class="name">{{item.name}}</span>
+            </div>
+            <div>
+              <span class="tenure">{{item.tenure}}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -52,14 +67,43 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZX')">{{getTime(option, "ZX")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index)">
-            <span class="station">{{item.station}}</span>
-            <span class="name">{{item.name}}</span>
-            <span class="tenure">{{item.tenure}}</span>
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <div>
+              <span class="station">{{item.station}}</span>
+              <span class="name">{{item.name}}</span>
+            </div>
+            <div>
+              <span class="tenure">{{item.tenure}}</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <el-dialog
+    :title="profileTile"
+    :visible.sync="profile_visible"
+    width="900px"
+    center
+    append-to-body
+    custom-class="dialog_custom_class2">
+    <div class="profile2">
+      <div class="profile_photo left">
+        <el-image
+          style="width: 150px; height: 150px"
+          :src="profile.photo"
+          fit="cover"
+          lazy
+          v-if="profile.photo"></el-image>
+        <img src="../assets/images/touxiang.jpg" v-else/>
+      </div>
+      <div class="profile_content" v-html="profile.profile"></div>
+    </div>
+    <span slot="footer" class="dialog-footer">
+      <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
+      <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
+    </span>
+  </el-dialog>
 </div>
 </template>
 <script>
@@ -73,7 +117,13 @@ export default {
       ZFOptions: [],
       ZXOptions: [],
       china: ['一','二','三','四','五','六','七','八','九','十','十一','十二','十三', '十四'],
-      explainText: '<div>特别说明：</div><div class="section">玉树州六届人大一次会议以前，均未设立常设机构，闭会期间，其职能由州人民委员会行使，1981年5月自治州第六届人民代表大会第一次会议选举产生了它的常设机关---州人民代表大会常务委员会。</div>'
+      explainText: '<div>特别说明：</div><div class="section">玉树州六届人大一次会议以前，均未设立常设机构，闭会期间，其职能由州人民委员会行使，1981年5月自治州第六届人民代表大会第一次会议选举产生了它的常设机关---州人民代表大会常务委员会。</div>',
+      profile_visible: false,
+      profileTile: '',
+      hasPre: false,
+      hasNext: false,
+      profile: {},
+      curPersonIndex: -1
     }
   },
   computed:{
@@ -139,6 +189,74 @@ export default {
           group: group
         }
       })
+    },
+    showProfile(item, index) {
+      console.log(item,index)
+      this.curPersonIndex = index;
+      this.hasPre = this.checkPre();
+      this.hasNext = this.checkNext();
+      const _this = this;
+      if(item.more){
+        Ajax({
+          url: '/static/mock/profiles/' + item.id + '.json',
+        }).then(data => {
+          if(data) {
+            _this.profile_visible = true;
+            _this.profileTile = item.name + "个人简介";
+            _this.profile = data.datas;
+            _this.modifyProfile();
+          }
+        })
+      } else {
+         this.$notify({
+          title: item.name,
+          message: '数据采集中，暂无数据',
+          type: 'warning',
+          duration: '1000'
+        });
+      }
+    },
+    modifyProfile() {
+      if(this.profile.photo.length) {
+        this.profile.photo = "/static/mock/photos/" + this.profile.photo[0];
+      } else {
+        this.profile.photo = ""
+      }
+      if(this.profile.profile) {
+        let text = "<div class='section'>" + this.profile.profile + "</div>"
+        text = text.replace(/\n/g, "\n</div><div class='section'>");
+        this.profile.profile = text;
+      } else {
+        this.profile.profile = '数据采集中，暂无数据'
+      }
+    },
+    checkPre() {
+      let pre = false;
+      // if(this.curPersonIndex > 0) {
+      //   const _this = this;
+      //   let crews = this.getCurCrews();
+      //   crews.forEach((crew, index) => {
+      //     if(crew.more && _this.curPersonIndex > index) pre = true;
+      //   })
+      // }
+      return pre
+    },
+    checkNext() {
+      let next = false;
+      // if(this.curPersonIndex > -1) {
+      //   const _this = this;
+      //   let crews = this.getCurCrews();
+      //   crews.forEach((crew, index) => {
+      //     if(crew.more && _this.curPersonIndex < index) next = true;
+      //   })
+      // }
+      return next
+    },
+    prePerson() {
+
+    },
+    nextPerson() {
+
     }
   },
   mounted() {

@@ -4,38 +4,48 @@
 			{
 				"id": "0157",
 				"name": "史国枢",
+"photo": "sgs-0157.png",
 				"sex": "",	
 				"station": "书记",	
 				"tenure": "1991.04-1994.01",
 				"more": true
+				
 			},{
 				"id": "0162",
 				"name": "赵启中",
+"photo": "zqz-0162.png",
 				"sex": "",	
 				"station": "书记",	
 				"tenure": "1994.01-1996.05",
 				"more": true
+				
 			},{
 				"id": "0158",
 				"name": "何福兴",
+"photo": "hfx-0158.png",
 				"sex": "",	
 				"station": "副书记",	
 				"tenure": "1991.04-1993.01",
 				"more": true
+				
 			},{
 				"id": "0162",
 				"name": "赵启中",
+"photo": "zqz-0162.png",
 				"sex": "",	
 				"station": "副书记",	
 				"tenure": "1991.04-1994.01",
 				"more": true
+				
 			},{
 				"id": "0163",
 				"name": "韩文禄",
+"photo": "hwl-0163.png",
 				"sex": "",	
 				"station": "副书记",	
 				"tenure": "1991.04-1996.03",
 				"more": true
+				
 			},{
 				"id": "0198",
 				"name": "王西明",
@@ -43,13 +53,16 @@
 				"station": "副书记",	
 				"tenure": "1991.4-1995.09",
 				"more": false
+				
 			},{
 				"id": "0199",
 				"name": "多杰热旦",
+"photo": "djrd-0199.jpg",
 				"sex": "",	
 				"station": "副书记",	
 				"tenure": "1993.03-1996.03",
 				"more": true
+				
 			},{
 				"id": "0200",
 				"name": "樊大新",
@@ -57,6 +70,7 @@
 				"station": "副书记",	
 				"tenure": "1994.01-1996.05",
 				"more": false
+				
 			},{
 				"id": "0201",
 				"name": "马占魁",
@@ -64,6 +78,7 @@
 				"station": "副书记",	
 				"tenure": "1994.01-1996.05",
 				"more": false
+				
 			},{
 				"id": "0202",
 				"name": "靳生贵",
@@ -71,13 +86,16 @@
 				"station": "副书记",	
 				"tenure": "1994.10-1996.05",
 				"more": false
+				
 			},{
 				"id": "0203",
 				"name": "杨学武",
+"photo": "yxw-0203.png",
 				"sex": "",
 				"station": "副书记",	
 				"tenure": "1996.03-1996.05",
 				"more": true
+				
 			},{
 				"id": "0204",
 				"name": "宋转运",
@@ -85,6 +103,7 @@
 				"station": "常委",	
 				"tenure": "1991.04-1994.05",
 				"more": false
+				
 			},{
 				"id": "0171",
 				"name": "杜小明",
@@ -92,6 +111,7 @@
 				"station": "常委",	
 				"tenure": "1991.04-1993.09",
 				"more": true
+				
 			},{
 				"id": "0206",
 				"name": "索立志",
@@ -99,6 +119,7 @@
 				"station": "常委",	
 				"tenure": "1991.04-1993.11",
 				"more": false
+				
 			},{
 				"id": "0207",
 				"name": "土登洛章",
@@ -106,6 +127,7 @@
 				"station": "常委",	
 				"tenure": "1991.04-1996.05",
 				"more": false
+				
 			},{
 				"id": "0208",
 				"name": "马卫东",
@@ -113,6 +135,7 @@
 				"station": "常委",	
 				"tenure": "1994.10-1995.07",
 				"more": false
+				
 			},{
 				"id": "0209",
 				"name": "扎西旺章",
@@ -120,21 +143,26 @@
 				"station": "常委",	
 				"tenure": "1994.05-1996.05",
 				"more": false
+				
 			},{
 				"id": "0203",
 				"name": "杨学武",
+"photo": "yxw-0203.png",
 				"sex": "",	
 				"station": "常委",	
 				"tenure": "1993.11-1996.03",
 				"more": true
+				
 			},{
 				"id": "0211",
 				"name": "马伟",
+"photo": "mw-0211-01.png",
 				"sex": "",
 				"nation": "汉",
 				"station": "常委",	
 				"tenure": "1994.10-1996.05",
 				"more": true
+				
 			}
 		],
 		"period": 8,
@@ -152,6 +180,7 @@
 				"station": "主任",	
 				"tenure": "1991.05-1996.05",
 				"more": false
+				
 			},{
 				"id": "0213",
 				"name": "格桑秋吉",
@@ -159,6 +188,7 @@
 				"station": "副主任",	
 				"tenure": "1991.05-1996.05",
 				"more": false
+				
 			},{
 				"id": "0214",
 				"name": "米扎西",
@@ -166,6 +196,7 @@
 				"station": "副主任",	
 				"tenure": "1991.05-1996.05",
 				"more": false
+				
 			},{
 				"id": "0215",
 				"name": "尕帕",
@@ -173,6 +204,7 @@
 				"station": "副主任",	
 				"tenure": "1991.05-1996.05",
 				"more": false
+				
 			},{
 				"id": "0216",
 				"name": "本派",
@@ -180,6 +212,7 @@
 				"station": "副主任",	
 				"tenure": "1991.05-1995.12",
 				"more": false
+				
 			},{
 				"id": "0217",
 				"name": "李怀生",
@@ -187,6 +220,7 @@
 				"station": "副主任",	
 				"tenure": "1991.05-1996.05",
 				"more": false
+				
 			},{
 				"id": "0218",
 				"name": "陈师科",
@@ -194,6 +228,7 @@
 				"station": "副主任",	
 				"tenure": "1991.05-1996.05",
 				"more": false
+				
 			},{
 				"id": "0219",
 				"name": "赵国清",
@@ -201,6 +236,7 @@
 				"station": "副主任",	
 				"tenure": "1991.05-1996.05",
 				"more": false
+				
 			}
 		],
 		"period": 8,
@@ -214,10 +250,12 @@
 			{
 				"id": "0158",
 				"name": "何福兴",
+"photo": "hfx-0158.png",
 				"sex": "",	
 				"station": "州长",	
 				"tenure": "1991.05-1993.02",
 				"more": true
+				
 			},{
 				"id": "0221",
 				"name": "韩文录",
@@ -225,13 +263,16 @@
 				"station": "副州长",	
 				"tenure": "1991.05-1993.02",
 				"more": true
+				
 			},{
 				"id": "0199",
 				"name": "多杰热旦",
+"photo": "djrd-0199.jpg",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "1991.05-1996.03",
 				"more": true
+				
 			},{
 				"id": "0171",
 				"name": "杜小明",
@@ -239,6 +280,7 @@
 				"station": "副州长",	
 				"tenure": "1991.05-1993.10",
 				"more": true
+				
 			},{
 				"id": "0224",
 				"name": "吴国清",
@@ -246,20 +288,25 @@
 				"station": "副州长",	
 				"tenure": "1994-1996.05",
 				"more": true
+				
 			},{
 				"id": "0225",
 				"name": "罗松达哇",
+"photo": "lsdw-0225.jpg",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "1991.05-1996.05",
 				"more": true
+				
 			},{
 				"id": "0226",
 				"name": "江格",
+"photo": "jg-0226.png",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "1991.05-1996.05",
 				"more": true
+				
 			},{
 				"id": "0227",
 				"name": "勒生贵",
@@ -267,13 +314,16 @@
 				"station": "副州长",	
 				"tenure": "1991.05-1996.05",
 				"more": false
+				
 			},{
 				"id": "0228",
 				"name": "梁晓安",
+"photo": "lxa-0228.jpg",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "1995-1996.05",
 				"more": true
+				
 			}
 		],
 		"period": 8,
@@ -290,6 +340,7 @@
 				"station": "主席",	
 				"tenure": "1986.06-1991.05",
 				"more": false
+				
 			},{
 				"id": "0230",
 				"name": "冯诣林",
@@ -297,6 +348,7 @@
 				"station": "副主席",	
 				"tenure": "1986.06-1991.05",
 				"more": false
+				
 			},{
 				"id": "0231",
 				"name": "阿庆",
@@ -304,6 +356,7 @@
 				"station": "副主席",	
 				"tenure": "1986.06-1990.06",
 				"more": false
+				
 			},{
 				"id": "0232",
 				"name": "仲却",
@@ -311,6 +364,7 @@
 				"station": "副主席",	
 				"tenure": "1986.06-1991.05",
 				"more": false
+				
 			},{
 				"id": "0233",
 				"name": "江赛阿措",
@@ -318,6 +372,7 @@
 				"station": "副主席",	
 				"tenure": "1986.06-1991.05",
 				"more": false
+				
 			}
 		],
 		"period": 8,

@@ -1,19 +1,11 @@
 <template>
 <div class="container2">
-  <div class="aside-nav bounceInUp animated">
-    <label for="" class="aside-menu" title="菜单">菜单</label>
-    <a href="javascript:void(0)" 
-      class="menu-item menu-first" 
-      :class="[{'disabled': (group != 'RD' && period == 1) || (group == 'RD'&& period == 6) }]" 
-      @click="previousPeriod">上一届</a>
-    <a href="javascript:void(0)" class="menu-item menu-second" @click="backHome">首页</a>
-    <a href="javascript:void(0)" class="menu-item menu-third" :class="[{'disabled': !((group != 'ZX' && period < 13) || (group == 'ZX' && period < 14))}]" @click="nextPeriod">下一届</a>
-  </div>
   <div class="part2 part-alone">
     <div class="content2">
     	<div class="main_duty">{{getTime()}}</div>
       <div class="crews-alone">
         <div class="member clearfix" v-for="(item, index) in options.crews" :key="index" @click="showProfile(item, index, group)">
+          <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
           <span class="station">{{item.station}}</span>
           <span class="name">{{item.name}}</span>
           <span class="tenure">{{item.tenure}}</span>
@@ -62,6 +54,11 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="menu-actions clearfix">
+    <el-button round type="danger" @click="backHome">返回</el-button>
+    <el-button round type="danger" @click="previousPeriod" v-if="(group != 'RD' && period > 1) || (group == 'RD'&& period > 6)">上一届</el-button>
+    <el-button round type="danger" @click="nextPeriod" v-if="(group != 'ZX' && period < 13) || (group == 'ZX' && period < 14)">下一届</el-button>
   </div>
   <el-dialog
     :title="detailTitle"
@@ -117,7 +114,7 @@ export default {
       main_duties: '',
       profileTile: '',
       profile_visible: false,
-      profile: '',
+      profile: {},
       period: 1,
       curPersonIndex: -1,
       hasPre: false,

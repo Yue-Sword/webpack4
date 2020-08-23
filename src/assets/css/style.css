@@ -102,9 +102,11 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.clearfix::before, .clearfix::after {
+  content: ' ';
+  display: table;
+}
 .clearfix::after {
-  content: '';
-  display: block;
   clear: both;
 }
 .left {
@@ -207,6 +209,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   line-height: 30px;
   writing-mode: lr-tb;
   display: inline-block;
+  line-height: 50px;
   padding-left: 50px;
 /*  font-size: 20px;*/
   font-size: 16px;
@@ -243,7 +246,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   line-height: 60px;
   height: 60px;*/
   margin:  5px 0 15px 20px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 30px;
   height: 30px;
 }
@@ -777,13 +780,13 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   text-align: center;
   top: -10%;
   left: 0;
-  font-size: 16px;
+  font-size: 24px;
   padding: 10px 5px;
   width: 100%;
   color: black;
 }
 .time2 {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 1%;
   cursor: pointer;
   user-select: none;
@@ -795,8 +798,11 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   min-width: 200px;
   writing-mode: lr-tb;
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 3%;
+  min-height: 50px;
+  padding-bottom: 10px;
+  cursor: pointer;
 }
 .member2>span {
   float: left;
@@ -807,6 +813,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .part-alone {
   width: 100%;
+  float: none;
 }
 .profile2 {
   max-height: 60vh;
@@ -829,4 +836,20 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .dialog-footer2 .el-button {
   font-size: 16px;
+}
+.menu-actions {
+  padding: 20px;
+  text-align: center;
+}
+.member .el-avatar, .member2 .el-avatar {
+  background: rgba(31,45,61,.11);
+  margin-right: 10px;
+  float: left;
+}
+.member .el-avatar>img, .member2 .el-avatar>img {
+  margin: 0 auto;
+}
+.member2>div {
+  margin-left: 60px;
+  line-height: 25px;
 }

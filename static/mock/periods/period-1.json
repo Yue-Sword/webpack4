@@ -7,7 +7,8 @@
 				"sex": "",	
 				"station": "书记",	
 				"tenure": "1950.06-1954.04",
-				"more":true
+				"more":true,
+				"photo": "jcg-0001.jpg"
 			},{
 				"id": "0002",
 				"name": "李伦振",
@@ -15,6 +16,7 @@
 				"station": "书记",	
 				"tenure": "1956.04-1957.11",
 				"more": true
+				
 			},{
 				"id": "0003",
 				"name": "贺殿卿",
@@ -22,6 +24,7 @@
 				"station": "副书记",	
 				"tenure": "1956.04-1959.08",
 				"more": false
+				
 			},{
 				"id": "0004",
 				"name": "陈自强",
@@ -29,6 +32,7 @@
 				"station": "副书记",	
 				"tenure": "1956.04-1958.07",
 				"more": false
+				
 			},{
 				"id": "0005",
 				"name": "赵昆元",
@@ -36,6 +40,7 @@
 				"station": "常委",	
 				"tenure": "1956.04-1959.07",
 				"more": false
+				
 			},{
 				"id": "0006",
 				"name": "冯宝玉",
@@ -43,6 +48,7 @@
 				"station": "常委",	
 				"tenure": "1956.04-1959.08",
 				"more": false
+				
 			},{
 				"id": "0007",
 				"name": "董耿",
@@ -50,6 +56,7 @@
 				"station": "常委",	
 				"tenure": "1956.04-1957.07",
 				"more": false
+				
 			},{
 				"id": "0008",
 				"name": "李学英",
@@ -57,6 +64,7 @@
 				"station": "常委",	
 				"tenure": "1956.04-1957.09",
 				"more": false
+				
 			},{
 				"id": "0009",
 				"name": "葛银汉",
@@ -64,6 +72,7 @@
 				"station": "常委",	
 				"tenure": "1956.04-1959.07",
 				"more": false
+				
 			},{
 				"id": "0010",
 				"name": "李子良",
@@ -71,6 +80,7 @@
 				"station": "常委",	
 				"tenure": "1956.04-1959.07",
 				"more": false
+				
 			}
 		],
 		"period": 1,
@@ -93,7 +103,8 @@
 				"sex": "",	
 				"station": "州长",	
 				"tenure": "1958.08-1960.10",
-				"more": true
+				"more": true,
+				"photo": "zxcwdj-0011.png"
 			},{
 				"id": "0012",
 				"name": "贺殿",
@@ -101,13 +112,15 @@
 				"station": "副州长",	
 				"tenure": "1958.08-1960.10",
 				"more": false
+				
 			},{
 				"id": "0013",
 				"name": "仁青才仁",
 				"sex": "",	
 				"station": "副州长",	
 				"tenure": "1958.08-1960.10",
-				"more": false
+				"more": true,
+				"photo": "rqcr-0013.png"
 			},{
 				"id": "0014",
 				"name": "冯宝玉",
@@ -115,6 +128,7 @@
 				"station": "副州长",	
 				"tenure": "1958.08-1960.10",
 				"more": false
+				
 			},{
 				"id": "0015",
 				"name": "米福堂",
@@ -122,6 +136,7 @@
 				"station": "副州长",	
 				"tenure": "1958.08-1960.10",
 				"more": true
+				
 			},{
 				"id": "0016",
 				"name": "夏日",
@@ -129,6 +144,7 @@
 				"station": "副州长",	
 				"tenure": "1958.08-1960.10",
 				"more": false
+				
 			},{
 				"id": "0017",
 				"name": "索南则莫",
@@ -136,6 +152,7 @@
 				"station": "副州长",	
 				"tenure": "1958.08-1960.10",
 				"more": true
+				
 			}
 		],
 		"period": 1,
@@ -151,14 +168,17 @@
 				"sex": "",	
 				"station": "主席",	
 				"tenure": "1950.09-1954.06",
-				"more": true
+				"more": true,
+				"photo": "jcg-0001.jpg"
 			},{
 				"id": "0019",
 				"name": "沈岭",
+"photo": "sl-0019.png",
 				"sex": "",	
 				"station": "主席",	
 				"tenure": "1958.04-1959.10",
 				"more": true
+				
 			},{
 				"id": "0020",
 				"name": "蔡作祯",
@@ -166,6 +186,7 @@
 				"station": "副主席",	
 				"tenure": "1950.09-1958.04",
 				"more": false
+				
 			},{
 				"id": "0021",
 				"name": "仁庆",
@@ -173,6 +194,7 @@
 				"station": "副主席",	
 				"tenure": "1958.04-1959.04",
 				"more": false
+				
 			},{
 				"id": "0022",
 				"name": "江吉",
@@ -180,6 +202,7 @@
 				"station": "副主席",	
 				"tenure": "1958.04-1958",
 				"more": false
+				
 			},{
 				"id": "0023",
 				"name": "赵昆元",
@@ -187,6 +210,7 @@
 				"station": "副主席",	
 				"tenure": "1958.04-1959.10",
 				"more": false
+				
 			}
 		],
 		"period": 1,

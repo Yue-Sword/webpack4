@@ -4,52 +4,66 @@
 			{
 				"id": "0299",
 				"name": "王秀琴",
+"photo": "wxq-0299.jpg",
 				"sex": "",	
 				"station": "主席",	
 				"tenure": "2016.11-2017.08",
 				"more": true
+				
 			},{
 				"id": "0396",
 				"name": "尕桑",
+"photo": "gs-0396.png",
 				"sex": "",	
 				"station": "主席",	
 				"tenure": "2018.01-至今",
 				"more": true
+				
 			},{
-				"id": "0492",
+				"id": "0488",
 				"name": "张国强",
+"photo": "zgq-0488.png",
 				"sex": "",	
 				"station": "副主席",	
 				"tenure": "2016.11-至今",
-				"more": false
+				"more": true
+				
 			},{
 				"id": "0409",
 				"name": "马生堂",
+"photo": "mst-0409.png",
 				"sex": "",	
 				"station": "副主席",	
 				"tenure": "2016.11-至今",
 				"more": true
+				
 			},{
 				"id": "0494",
 				"name": "达哇才仁",
+"photo": "dwcr-0494.png",
 				"sex": "",	
 				"station": "副主席",	
 				"tenure": "2016.11-至今",
 				"more": true
+				
 			},{
 				"id": "0495",
 				"name": "邵春鹏",
+"photo": "scp-0495.png",
 				"sex": "",	
 				"station": "副主席",	
 				"tenure": "2016.11-至今",
 				"more": true
+				
 			},{
 				"id": "0496",
 				"name": "罗松龙日",
+"photo": "lslr-0496.png",
 				"sex": "",	
 				"station": "副主席",	
 				"tenure": "2016.11-至今",
 				"more": true
+				
 			},{
 				"id": "0497",
 				"name": "昝学龙",
@@ -57,6 +71,7 @@
 				"station": "副主席",	
 				"tenure": "2018.03-至今",
 				"more": false
+				
 			}
 		],
 		"period": 14,
