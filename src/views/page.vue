@@ -253,11 +253,9 @@ export default {
   },
   mounted() {
     this.getPeriodData();
-    // let part2DomH = document.body.clientHeight * 0.23 + "px";
-    // let part2Doms = document.getElementsByClassName('container2');
-    // Array.prototype.forEach.call(part2Doms, function(ele){
-    //   ele.style.top = part2DomH
-    // })
+    let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
+    let container2Dom = document.getElementsByClassName("container2")[0];
+    container2Dom.style.paddingTop = (area.height*0.236/area.width*100).toFixed(1) + "%";
   }
 }
 </script>

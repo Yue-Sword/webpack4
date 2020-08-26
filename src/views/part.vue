@@ -321,6 +321,9 @@ export default {
       this.group = this.$route.params.group;
       this.period = this.option.period;
       this.getPeriodData();
+      let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
+      let container2Dom = document.getElementsByClassName("container2")[0];
+      container2Dom.style.paddingTop = (area.height*0.236/area.width*100).toFixed(1) + "%";
   	}else{
   		history.back();
   	}
