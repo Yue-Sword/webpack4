@@ -9,10 +9,8 @@
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index)">
             <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
-              <span class="station">{{item.station}}</span>
-              <span class="name">{{item.name}}</span>
-            </div>
-            <div>
+              <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+              <span class="name" :class="[{'space': item.name.length === 2}]">{{item.name}}</span>
               <span class="tenure">{{item.tenure}}</span>
             </div>
           </div>
@@ -29,10 +27,8 @@
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index)">
             <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
-              <span class="station">{{item.station}}</span>
-              <span class="name">{{item.name}}</span>
-            </div>
-            <div>
+              <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+              <span class="name" :class="[{'space': item.name.length === 2}]">{{item.name}}</span>
               <span class="tenure">{{item.tenure}}</span>
             </div>
           </div>
@@ -49,10 +45,8 @@
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index)">
             <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
-              <span class="station">{{item.station}}</span>
-              <span class="name">{{item.name}}</span>
-            </div>
-            <div>
+              <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+              <span class="name" :class="[{'space': item.name.length === 2}]">{{item.name}}</span>
               <span class="tenure">{{item.tenure}}</span>
             </div>
           </div>
@@ -69,10 +63,8 @@
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index)">
             <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
-              <span class="station">{{item.station}}</span>
-              <span class="name">{{item.name}}</span>
-            </div>
-            <div>
+              <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+              <span class="name" :class="[{'space': item.name.length === 2}]">{{item.name}}</span>
               <span class="tenure">{{item.tenure}}</span>
             </div>
           </div>
@@ -261,6 +253,11 @@ export default {
   },
   mounted() {
     this.getPeriodData();
+    // let part2DomH = document.body.clientHeight * 0.23 + "px";
+    // let part2Doms = document.getElementsByClassName('container2');
+    // Array.prototype.forEach.call(part2Doms, function(ele){
+    //   ele.style.top = part2DomH
+    // })
   }
 }
 </script>
