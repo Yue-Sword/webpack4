@@ -379,6 +379,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   padding: 0.6%;
   background: #BA0003;
   border-radius: 2%;
+  user-select: none;
 }
 .part2:first-child {
   margin-left: 0;
@@ -409,6 +410,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   margin-bottom: 1%;
   cursor: pointer;
   user-select: none;
+  padding: 15px 10px 10px 10px;
 }
 .time2.el-link {
   color: initial;
@@ -471,4 +473,18 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .member2>div {
   margin-left: 60px;
   line-height: 50px;
+}
+.btn-group {
+  padding: 10px 0 20px;
+  text-align: center;
+}
+.btn-group button {
+  background: rgba(31,45,61,.11);
+  border: none;
+  color: #FFF;
+}
+.btn-group button:hover, .btn-group button:active, .btn-group button:focus {
+  background: rgba(31,45,61,.23);
+  border: none;
+  color: #FFF;
 }
