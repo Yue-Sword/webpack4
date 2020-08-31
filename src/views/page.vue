@@ -10,7 +10,7 @@
             <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
-              <span class="name" :class="[{'space': item.name.length === 2}]">{{item.name}}</span>
+              <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
               <span class="tenure">{{item.tenure}}</span>
             </div>
           </div>
@@ -33,7 +33,7 @@
             <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
-              <span class="name" :class="[{'space': item.name.length === 2}]">{{item.name}}</span>
+              <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
               <span class="tenure">{{item.tenure}}</span>
             </div>
           </div>
@@ -56,7 +56,7 @@
             <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
-              <span class="name" :class="[{'space': item.name.length === 2}]">{{item.name}}</span>
+              <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
               <span class="tenure">{{item.tenure}}</span>
             </div>
           </div>
@@ -79,7 +79,7 @@
             <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
-              <span class="name" :class="[{'space': item.name.length === 2}]">{{item.name}}</span>
+              <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
               <span class="tenure">{{item.tenure}}</span>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default {
       let title = '';
       switch(group) {
         case 'ZW':
-          title = "历届州委会领导";
+          title = "历届州委领导";
           break;
         case 'RD':
           title = "历届人大领导";

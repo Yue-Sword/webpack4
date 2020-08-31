@@ -6,8 +6,8 @@
       <div class="crews-alone">
         <div class="member clearfix" v-for="(item, index) in options.crews" :key="index" @click="showProfile(item, index, group)">
           <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
-          <span class="station">{{item.station}}</span>
-          <span class="name">{{item.name}}</span>
+          <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+          <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
           <span class="tenure">{{item.tenure}}</span>
         </div>
       </div>
