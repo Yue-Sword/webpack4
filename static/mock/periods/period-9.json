@@ -71,12 +71,13 @@
         "more":false
       },
       {
-        "id":"0242",
-        "name":"昂格藏",
+        "id":"0283",
+        "name":"昂格",
+        "photo":"ag-0283.JPG",
         "sex":"",
         "station":"常委",
         "tenure":"1996.05-2000.04",
-        "more":false
+        "more":true
       },
       {
         "id":"0243",
@@ -342,8 +343,7 @@
         "sex":"",
         "station":"副主席",
         "tenure":"1991.05-1996.05",
-        "more":true,
-        "photo":"rqcr-0013.png"
+        "more":false
       }
     ],
     "period":9,

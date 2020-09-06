@@ -25,7 +25,7 @@
         "photo":"scw-0373.jpg",
         "sex":"",
         "station":"副书记",
-        "tenure":"2016.11-至今",
+        "tenure":"2016.11-2018.05",
         "more":true
       },
       {
@@ -34,7 +34,7 @@
         "photo":"whj-0439.jpg",
         "sex":"",
         "station":"副书记",
-        "tenure":"2018.08-至今",
+        "tenure":"2018.08-2020.08",
         "more":true
       },
       {
@@ -52,7 +52,7 @@
         "photo":"cyx-0393.JPG",
         "sex":"",
         "station":"常委",
-        "tenure":"2015.07-至今",
+        "tenure":"2015.07-2020.04",
         "more":true
       },
       {
@@ -325,7 +325,7 @@
         "photo":"cyx-0393.JPG",
         "sex":"",
         "station":"副州长",
-        "tenure":"2016.11-至今",
+        "tenure":"2016.11-2020.06",
         "more":true
       },
       {
@@ -406,7 +406,7 @@
         "photo":"hb-0474.png",
         "sex":"",
         "station":"副州长",
-        "tenure":"2016.11-2020.07",
+        "tenure":"2016.11-至今",
         "more":true
       },
       {
@@ -461,15 +461,6 @@
         "sex":"",
         "station":"副州长",
         "tenure":"2020.06-至今",
-        "more":true
-      },
-      {
-        "id":"0474",
-        "name":"何勃",
-        "photo":"hb-0474.png",
-        "sex":"",
-        "station":"副州长",
-        "tenure":"2020.07-至今",
         "more":true
       },
       {
@@ -533,8 +524,7 @@
         "sex":"",
         "station":"副主席",
         "tenure":"2012.03-2016.11",
-        "more":true,
-        "photo":"rqcr-0013.png"
+        "more":false
       },
       {
         "id":"0226",

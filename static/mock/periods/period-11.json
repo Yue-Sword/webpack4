@@ -137,8 +137,7 @@
         "sex":"",
         "station":"常委",
         "tenure":"2010.09-2012.03",
-        "more":true,
-        "photo":"rqcr-0013.png"
+        "more":false
       },
       {
         "id":"0324",
@@ -515,8 +514,7 @@
         "sex":"",
         "station":"副主席",
         "tenure":"2001.04-2006.11",
-        "more":true,
-        "photo":"rqcr-0013.png"
+        "more":false
       },
       {
         "id":"0363",

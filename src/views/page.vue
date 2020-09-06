@@ -110,7 +110,7 @@
     custom-class="dialog_custom_class2">
     <div class="main_duties">
       <el-carousel :autoplay="false" height="400px">
-        <el-carousel-item v-for="(item, index) in snapshots" :key="index">
+        <el-carousel-item v-for="(item, index) in snapshots" :key="index" >
           <div class="glimpse-box">
             <el-image :src="item" fit="cover"></el-image>
           </div>

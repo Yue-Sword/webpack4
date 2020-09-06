@@ -288,7 +288,7 @@
           "photo":"lep-0025.png",
           "sex":"",
           "station":"书记",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":true
         },
         {
@@ -297,7 +297,7 @@
           "photo":"cx-0066.png",
           "sex":"",
           "station":"副书记",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":true
         },
         {
@@ -306,14 +306,14 @@
           "photo":"yb-0045.png",
           "sex":"",
           "station":"副书记",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":true
         },{
           "id":"0068",
           "name":"朱纯雪",
           "sex":"",
           "station":"常委",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":false
         },
         {
@@ -322,7 +322,7 @@
           "photo":"cjx-0069.png",
           "sex":"",
           "station":"常委",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":true
         },
         {
@@ -330,7 +330,7 @@
           "name":"王子云",
           "sex":"",
           "station":"常委",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":false
         },
         {
@@ -338,7 +338,7 @@
           "name":"王干",
           "sex":"",
           "station":"常委",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":false
         },
         {
@@ -346,7 +346,7 @@
           "name":"葛银汉",
           "sex":"",
           "station":"常委",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":false
         },
         {
@@ -354,7 +354,7 @@
           "name":"孟金印",
           "sex":"",
           "station":"常委",
-          "tenure":"1966.03-1996.05",
+          "tenure":"1966.03-1966.05",
           "more":false
         }
       ],
@@ -989,7 +989,7 @@
         },
         {
           "id":"0209",
-          "name":"扎西旺章",
+          "name":"扎西旺璋",
           "sex":"",
           "station":"常委",
           "tenure":"1994.05-1996.05",
@@ -1090,12 +1090,13 @@
           "more":false
         },
         {
-          "id":"0242",
-          "name":"昂格藏",
+          "id":"0283",
+          "name":"昂格",
+          "photo":"ag-0283.JPG",
           "sex":"",
           "station":"常委",
           "tenure":"1996.05-2000.04",
-          "more":false
+          "more":true
         },
         {
           "id":"0243",
@@ -1187,7 +1188,7 @@
           "name":"景占荣",
           "sex":"",
           "station":"副书记",
-          "tenure":"2001.05-?",
+          "tenure":"2001.05-2006.11",
           "more":false
         },
         {
@@ -1221,7 +1222,7 @@
           "name":"扎西旺璋",
           "sex":"",
           "station":"常委",
-          "tenure":"?-2006.11",
+          "tenure":"2001.05-2006.11",
           "more":false
         },
         {
@@ -1229,7 +1230,7 @@
           "name":"冯兴禄",
           "sex":"",
           "station":"常委",
-          "tenure":"2001.05-?",
+          "tenure":"2001.05-2006.11",
           "more":false
         },
         {
@@ -1383,8 +1384,7 @@
           "sex":"",
           "station":"常委",
           "tenure":"2010.09-2012.03",
-          "more":true,
-          "photo":"rqcr-0013.png"
+          "more":false
         },
         {
           "id":"0324",
@@ -1822,7 +1822,7 @@
           "photo":"scw-0373.jpg",
           "sex":"",
           "station":"副书记",
-          "tenure":"2016.11-至今",
+          "tenure":"2016.11-2018.05",
           "more":true
         },
         {
@@ -1831,7 +1831,7 @@
           "photo":"whj-0439.jpg",
           "sex":"",
           "station":"副书记",
-          "tenure":"2018.08-至今",
+          "tenure":"2018.08-2020.08",
           "more":true
         },
         {
@@ -1849,7 +1849,7 @@
           "photo":"cyx-0393.JPG",
           "sex":"",
           "station":"常委",
-          "tenure":"2015.07-至今",
+          "tenure":"2015.07-2020.04",
           "more":true
         },
         {
@@ -2623,8 +2623,7 @@
           "sex":"",
           "station":"副州长",
           "tenure":"1958.08-1960.10",
-          "more":true,
-          "photo":"rqcr-0013.png"
+          "more":false
         },
         {
           "id":"0014",
@@ -2667,7 +2666,7 @@
           "name":"扎西才旺多杰",
           "sex":"",
           "station":"州长",
-          "tenure":"1960.10-1963",
+          "tenure":"1960.10-1963.05",
           "more":true,
           "photo":"zxcwdj-0011.png"
         },
@@ -2676,7 +2675,7 @@
           "name":"米福堂",
           "sex":"",
           "station":"副州长",
-          "tenure":"1958.08-1960.10",
+          "tenure":"1960.10-1963.05",
           "more":true
         },
         {
@@ -2684,7 +2683,7 @@
           "name":"冯宝玉",
           "sex":"",
           "station":"副州长",
-          "tenure":"1961.11-1963",
+          "tenure":"1961.11-1963.05",
           "more":false
         },
         {
@@ -2770,7 +2769,7 @@
           "name":"朱纯雪",
           "sex":"",
           "station":"副州长",
-          "tenure":"1965.10-1972.05",
+          "tenure":"1965.10-1967.11",
           "more":false
         },
         {
@@ -2779,7 +2778,7 @@
           "photo":"cjx-0069.png",
           "sex":"",
           "station":"副州长",
-          "tenure":"1965.10-1967.11",
+          "tenure":"1965.10-1972.05",
           "more":true
         }
       ],
@@ -3004,8 +3003,9 @@
           "more":true
         },
         {
-          "id":"0221",
-          "name":"韩文录",
+          "id":"0163",
+          "name":"韩文禄",
+          "photo":"hwl-0163.png",
           "sex":"",
           "station":"副州长",
           "tenure":"1991.05-1993.02",
@@ -3568,7 +3568,7 @@
           "photo":"cyx-0393.JPG",
           "sex":"",
           "station":"副州长",
-          "tenure":"2016.11-至今",
+          "tenure":"2016.11-2020.06",
           "more":true
         },
         {
@@ -3649,7 +3649,7 @@
           "photo":"hb-0474.png",
           "sex":"",
           "station":"副州长",
-          "tenure":"2016.11-2020.07",
+          "tenure":"2016.11-至今",
           "more":true
         },
         {
@@ -3704,15 +3704,6 @@
           "sex":"",
           "station":"副州长",
           "tenure":"2020.06-至今",
-          "more":true
-        },
-        {
-          "id":"0474",
-          "name":"何勃",
-          "photo":"hb-0474.png",
-          "sex":"",
-          "station":"副州长",
-          "tenure":"2020.07-至今",
           "more":true
         },
         {
@@ -3961,7 +3952,7 @@
           "name":"邓佳",
           "sex":"",
           "station":"副主席",
-          "tenure":"1962.06-1963.10",
+          "tenure":"1965.10-1967.05",
           "more":false
         },
         {
@@ -3969,7 +3960,7 @@
           "name":"扎西才仁",
           "sex":"",
           "station":"副主席",
-          "tenure":"1962.06-1963.10",
+          "tenure":"1965.10-1967.05",
           "more":false
         }
       ],
@@ -4056,7 +4047,7 @@
           "name":"弋保元",
           "sex":"",
           "station":"副主席",
-          "tenure":"1962.06-1963.10",
+          "tenure":"1983.03-1984.11",
           "more":false
         },
         {
@@ -4181,8 +4172,7 @@
           "sex":"",
           "station":"副主席",
           "tenure":"1991.05-1996.05",
-          "more":true,
-          "photo":"rqcr-0013.png"
+          "more":false
         }
       ],
       "period":9,
@@ -4236,8 +4226,7 @@
           "sex":"",
           "station":"副主席",
           "tenure":"1996.05-2001.03",
-          "more":true,
-          "photo":"rqcr-0013.png"
+          "more":false
         },
         {
           "id":"0306",
@@ -4301,8 +4290,7 @@
           "sex":"",
           "station":"副主席",
           "tenure":"2001.04-2006.11",
-          "more":true,
-          "photo":"rqcr-0013.png"
+          "more":false
         },
         {
           "id":"0363",
@@ -4386,8 +4374,7 @@
           "sex":"",
           "station":"副主席",
           "tenure":"2006.11-2012.03",
-          "more":true,
-          "photo":"rqcr-0013.png"
+          "more":false
         },
         {
           "id":"0367",
@@ -4446,8 +4433,7 @@
           "sex":"",
           "station":"副主席",
           "tenure":"2012.03-2016.11",
-          "more":true,
-          "photo":"rqcr-0013.png"
+          "more":false
         },
         {
           "id":"0226",

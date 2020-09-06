@@ -51,7 +51,7 @@
         "name":"景占荣",
         "sex":"",
         "station":"副书记",
-        "tenure":"2001.05-?",
+        "tenure":"2001.05-2006.11",
         "more":false
       },
       {
@@ -85,7 +85,7 @@
         "name":"扎西旺璋",
         "sex":"",
         "station":"常委",
-        "tenure":"?-2006.11",
+        "tenure":"2001.05-2006.11",
         "more":false
       },
       {
@@ -93,7 +93,7 @@
         "name":"冯兴禄",
         "sex":"",
         "station":"常委",
-        "tenure":"2001.05-?",
+        "tenure":"2001.05-2006.11",
         "more":false
       },
       {
@@ -335,8 +335,7 @@
         "sex":"",
         "station":"副主席",
         "tenure":"1996.05-2001.03",
-        "more":true,
-        "photo":"rqcr-0013.png"
+        "more":false
       },
       {
         "id":"0306",
