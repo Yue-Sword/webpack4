@@ -1,5 +1,5 @@
 body{
-  font-family: "楷体_GB2312", PingFang SC, "Microsoft YaHei";
+  font-family: "华文楷体",Times New Roman,"楷体_GB2312", PingFang SC, "Microsoft YaHei";
 }
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
   margin:0;
@@ -81,7 +81,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   width: 100%;
   height: 100vh;
   position: relative;
-  min-width: 1920px;
+  min-width: 3840px;
   min-height: 1080px;
   background: url('../images/bg.jpg') no-repeat;
   background-size: 100% 100%;
@@ -91,7 +91,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 @font-face {
   font-family: 'iconfont';
   src: url('../iconfont/iconfont.eot?t=1536304920361'),
-   url('../iconfont/iconfont.ttf?t=1536304920361') format('truetype');
+  url('../iconfont/iconfont.ttf?t=1536304920361') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -407,7 +407,9 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   font-size: 24px;
   padding: 10px 5px;
   width: 100%;
-  color: black;
+  letter-spacing: 0.2em;
+  color: #FDAE0C;
+  text-shadow: 5px 5px 20px #000;
 }
 .time2 {
   font-size: 18px;

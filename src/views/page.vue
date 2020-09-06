@@ -197,16 +197,16 @@ export default {
       let time = '';
       switch(group) {
         case 'ZW':
-          time = "玉树州第" + this.china[option.period - 1] + "届州委委员会： " + option.time;
+          time = "中共玉树州委第" + this.china[option.period - 1] + "届委员会： " + option.time;
           break;
         case 'RD':
-          time = "玉树州第" + this.china[option.period - 1] + "届人大常委会： " + option.time;
+          time = "中共玉树州人大第" + this.china[option.period - 1] + "届常委会： " + option.time;
           break;
         case 'ZF':
-          time = "玉树州第" + this.china[option.period - 1] + "届人代会： " + option.time;
+          time = "中共玉树州政府第" + this.china[option.period - 1] + "届人代会： " + option.time;
           break;
         case 'ZX':
-          time = "玉树州第" + this.china[option.period - 1] + "届政协委员会: " + option.time;
+          time = "中共玉树州政协第" + this.china[option.period - 1] + "届委员会: " + option.time;
           break;
       }
       return time
@@ -358,6 +358,13 @@ export default {
     nextPerson() {
 
     }
+  },
+  created() {
+    let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
+    borderDom.style.maxWidth = "initial";
+    borderDom.style.maxHeight = "initial";
+    borderDom.style.minWidth = "3840px";
+    borderDom.style.minHeight = "1080px";
   },
   mounted() {
     this.getWholePeriodData();
