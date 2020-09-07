@@ -1,8 +1,8 @@
 <template>
-<div class="container2">
+<div class="container2" style="height: 90.5%">
   <div class="part2 part-alone">
     <div class="content2">
-    	<div class="main_duty">{{getTime()}}</div>
+    	<div class="main_duty" v-cloak>{{main_duty_title}}</div>
       <div class="crews-alone">
         <div class="member clearfix" v-for="(item, index) in options.crews" :key="index" @click="showProfile(item, index, group)">
           <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
@@ -67,7 +67,7 @@
     center
     append-to-body
     custom-class="dialog_custom_class2">
-    <div class="main_duties" v-html="main_duties"></div>
+    <div class="main_duties" v-html="main_duties" style="maxHeight: 60vh"></div>
   </el-dialog>
   <el-dialog
     :title="profileTile"
@@ -76,7 +76,7 @@
     center
     append-to-body
     custom-class="dialog_custom_class2">
-    <div class="profile2">
+    <div class="profile2" style="maxHeight: 60vh">
       <div class="profile_photo left">
         <el-image
           style="width: 150px; height: 150px"
@@ -120,46 +120,28 @@ export default {
       hasPre: false,
       hasNext: false,
       detailTitle: '',
+      main_duty_title: ''
     }
   },
   computed:{
-
+    //...
   },
   methods: {
-    // 获取标题
-    getTitle(group) {
-      let title = '';
-      switch(group) {
-        case 'ZW':
-          title = "历届州委会领导";
-          break;
-        case 'RD':
-          title = "历届人大领导";
-          break;
-        case 'ZF':
-          title = "历届政府领导";
-          break;
-        case 'ZX':
-          title = "历届政协领导";
-          break;
-      }
-      return title
-    },
     // 获取任期时间
     getTime() {
       let time = '';
-    	switch(this.group) {
+      switch(this.group) {
         case 'ZW':
           time = "中共玉树州委第" + this.china[this.options.period - 1] + "届委员会： " + this.options.time;
           break;
         case 'RD':
-          time = "中共玉树州人大第" + this.china[this.options.period - 1] + "届常委会： " + this.options.time;
+          time = "玉树州人大第" + this.china[this.options.period - 1] + "届常委会： " + this.options.time;
           break;
         case 'ZF':
-          time = "中共玉树州政府第" + this.china[this.options.period - 1] + "届人代会： " + this.options.time;
+          time = "玉树州政府第" + this.china[this.options.period - 1] + "届人代会： " + this.options.time;
           break;
         case 'ZX':
-          time = "中共玉树州政协第" + this.china[this.options.period - 1] + "届委员会" + this.options.time;
+          time = "玉树州政协第" + this.china[this.options.period - 1] + "届委员会" + this.options.time;
           break;
       }
       return time
@@ -224,7 +206,7 @@ export default {
       });
       this.curPersonIndex = idx.pop();
       let crew = crews.pop();
-      this.profileTile = crew.name + "个人简介";
+      this.profileTile = crew.name + "  个人简介";
       const _this = this;
       Ajax({
         url: '/static/mock/profiles/' + crew.id + '.json',
@@ -247,7 +229,7 @@ export default {
       });
       this.curPersonIndex = idx.shift();
       let crew = crews.shift();
-      this.profileTile = crew.name + "个人简介";
+      this.profileTile = crew.name + "  个人简介";
       const _this = this;
       Ajax({
         url: '/static/mock/profiles/' + crew.id + '.json',
@@ -306,8 +288,8 @@ export default {
       Ajax({
         url: '/static/mock/periods/period-' + this.period + '.json',
       }).then(data => {
-        console.log(data)
         _this.options = data[_this.group];
+        _this.main_duty_title = _this.getTime();
         _this.options.snapshot = _this.options.snapshot.map(item =>{
           item = "/static/mock/glimpses/" + _this.group.toLowerCase() + "/" + item;
           return item
@@ -316,21 +298,22 @@ export default {
     }
   },
   created() {
-    let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
-    borderDom.style.maxWidth = "1920px";
-    borderDom.style.maxHeight = "1080px";
-    borderDom.style.minWidth = "initial";
-    borderDom.style.minHeight = "initial";
+    
   },
   mounted() {
   	if(this.$route.params.group) {
   		this.option = this.$route.params.option;
       this.group = this.$route.params.group;
       this.period = this.option.period;
+      let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
+      borderDom.style.maxWidth = "1920px";
+      borderDom.style.maxHeight = "1080px";
+      borderDom.style.minWidth = "initial";
+      borderDom.style.minHeight = "initial";
       this.getPeriodData();
       let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
       let container2Dom = document.getElementsByClassName("container2")[0];
-      container2Dom.style.paddingTop = (area.height*0.236/area.width*100).toFixed(1) + "%";
+      container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
   	}else{
   		history.back();
   	}

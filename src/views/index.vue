@@ -1,111 +1,307 @@
 <template>
-<div class="period">
-  <!-- Next period -->
-  <div class="aside-nav bounceInUp animated next-button" v-if="period < 14" @click="nextPeriod">
-    <span class="aside-menu"><i class="el-icon-arrow-right"></i></span>
-  </div>
-  <!-- Previous period -->
-  <div class="aside-nav bounceInUp animated previous-button" v-if="period > 1" @click="previousPeriod">
-    <span class="aside-menu"><i class="el-icon-arrow-left "></i></span>
-  </div>
-  <!-- Previous period -->
-  <div class="page clearfix">
-    <div class="container">
-      <div class="part" v-for="option in options" :key="option.group">
-        <div class="content">
-          <h1 class="title">{{getTitle(option)}}</h1>
-          <template v-if="!(option.group == 'RD' && period < 6)">
-            <div class="time">{{getTime(option)}}</div>
-            <div class="crews">
-              <div class="member clearfix" :class="{'warning-color': item.id === '0000'}" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index, option.group)">
-                <span class="station">{{item.station}}</span>
-                <span class="name">{{item.name}}</span>
-                <span class="tenure">{{item.tenure}}</span>
-              </div>
+<div class="container2">
+  <div class="part2">
+    <h1 class="title2">{{getTitle("ZW")}}</h1>
+    <div class="content2">
+      <div class="period2" v-for="(option, index) in ZWOptions" :key="index">
+        <el-link class="time2" title="查看详情" @click="goto(option, 'ZW')">{{getTime(option, "ZW")}}</el-link>
+        <div class="crews2">
+           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index, 1)">
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <div>
+              <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+              <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
+              <span class="tenure">{{item.tenure}}</span>
             </div>
-            <div class="main_duty">
-              <div class="main_duty_label">工作内容</div>
-              <el-link 
-                :title="option.main_duties?'':'数据采集中，暂无数据'"
-                @click="showDetails(option.main_duties, 'main_duties')" 
-                class="main_duty_link" 
-                :disabled="!option.main_duties">
-                查看详情
-                <i class="el-icon--right el-icon-view" v-if="option.main_duties"></i>
-                <i class="el-icon--right el-icon-warning-outline" v-else></i>
-              </el-link>
-            </div>
-            <div class="main_duty">
-              <div class="main_duty_label">工作总结</div>
-              <el-link 
-                :title="option.summary?'':'数据采集中，暂无数据'"
-                @click="showDetails(option.summary, 'summary')" 
-                class="main_duty_link" 
-                :disabled="!option.summary">
-                查看详情
-                <i class="el-icon--right el-icon-view" v-if="option.summary"></i>
-                <i class="el-icon--right el-icon-warning-outline" v-else></i>
-              </el-link>
-            </div>
-            <div class="snapshot">
-              <div class="glimpse_label">工作掠影</div>
-              <el-carousel :autoplay="false" height="400px" v-if="option.snapshot.length">
-                <el-carousel-item v-for="(item, index) in option.snapshot" :key="index" >
-                  <div class="glimpse-box">
-                    <el-image :src="item" fit="cover"></el-image>
-                  </div>
-                </el-carousel-item>
-              </el-carousel>
-              <div  class="glimpses-empty" v-else>
-                <el-image>
-                  <div slot="error" class="image-slot" style="text-align: center;">
-                    <i class="el-icon-picture-outline" style="font-size: 100px;"></i>
-                    <div class="empty-text">数据采集中，暂无数据</div>
-                  </div>
-                </el-image>
-              </div>
-            </div>
-          </template>
-          <template v-else>
-            <div class="explain" v-html="explainText"></div>
-          </template>
+          </div>
+        </div>
+        <div class="btn-group">
+          <el-button round type="danger" @click="showDetails('main_duties', 'ZW', option, 1)">工作内容</el-button>
+          <el-button round type="danger" @click="showDetails('summary', 'ZW', option, 1)" >工作总结</el-button>
+          <el-button round type="danger" @click="showDetails('snapshot', 'ZW', option, 1)">工作掠影</el-button>
         </div>
       </div>
     </div>
     <el-dialog
-      :title="detailTitle"
-      :visible.sync="main_duty_visible"
-      width="900px"
+      :title="profileTile1"
+      :visible.sync="profile_visible1"
+      :modal-append-to-body="false"
+      :lock-scroll="false"
       center
-      append-to-body
-      top="430px"
-      custom-class="dialog_custom_class">
-      <div class="main_duties" v-html="main_duties"></div>
-    </el-dialog>
-    <el-dialog
-      :title="profileTile"
-      :visible.sync="profile_visible"
-      width="900px"
-      center
-      append-to-body
-      top="430px"
-      custom-class="dialog_custom_class">
-      <div class="profile">
+      class="dialog-absolute"
+      custom-class="dialog_custom_class2">
+      <div class="profile2" :style="{'max-height': part2Height + 'px'}">
         <div class="profile_photo left">
           <el-image
             style="width: 150px; height: 150px"
-            :src="profile.photo"
+            :src="profile1.photo"
             fit="cover"
             lazy
-            v-if="profile.photo"></el-image>
+            v-if="profile1.photo"></el-image>
           <img src="../assets/images/touxiang.jpg" v-else/>
         </div>
-        <div class="profile_content" v-html="profile.profile"></div>
+        <div class="profile_content" v-html="profile1.profile"></div>
       </div>
       <span slot="footer" class="dialog-footer">
         <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
         <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
       </span>
+    </el-dialog>
+    <el-dialog
+      :title="detailTitle1"
+      :visible.sync="main_duty_visible1"
+      center
+      :lock-scroll="false"
+      :modal-append-to-body="false"
+      custom-class="dialog_custom_class2"
+      class="dialog-absolute">
+      <div class="main_duties" :style="{'max-height': part2Height + 'px'}" v-html="main_duties1"></div>
+    </el-dialog>
+    <el-dialog
+      :title="detailTitle1"
+      :visible.sync="snapshot_visible1"
+      center
+      :lock-scroll="false"
+      :modal-append-to-body="false"
+      custom-class="dialog_custom_class2"
+      class="dialog-absolute">
+      <div class="main_duties">
+        <el-carousel :autoplay="false" height="400px">
+          <el-carousel-item v-for="(item, index) in snapshots1" :key="index" >
+            <div class="glimpse-box">
+              <el-image :src="item" fit="cover"></el-image>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </el-dialog>
+  </div>
+  <div class="part2">
+    <h1 class="title2">{{getTitle("RD")}}</h1>
+    <div class="content2">
+      <div class="period2" v-for="(option, index) in RDOptions" :key="index">
+        <el-link class="time2" title="查看详情"  @click="goto(option, 'RD')">{{getTime(option, "RD")}}</el-link>
+        <div class="crews2">
+          <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,2)">
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <div>
+              <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+              <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
+              <span class="tenure">{{item.tenure}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <el-button round type="info" @click="showDetails('main_duties', 'RD', option, 2)">工作内容</el-button>
+          <el-button round type="info" @click="showDetails('summary', 'RD', option, 2)">工作总结</el-button>
+          <el-button round type="info" @click="showDetails('snapshot', 'RD', option, 2)">工作掠影</el-button>
+        </div>
+      </div>
+    </div>
+    <el-dialog
+      :title="profileTile2"
+      :visible.sync="profile_visible2"
+      :modal-append-to-body="false"
+      :lock-scroll="false"
+      center
+      class="dialog-absolute"
+      custom-class="dialog_custom_class2">
+      <div class="profile2" :style="{'max-height': part2Height + 'px'}">
+        <div class="profile_photo left">
+          <el-image
+            style="width: 150px; height: 150px"
+            :src="profile2.photo"
+            fit="cover"
+            lazy
+            v-if="profile2.photo"></el-image>
+          <img src="../assets/images/touxiang.jpg" v-else/>
+        </div>
+        <div class="profile_content" v-html="profile2.profile"></div>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
+        <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
+      </span>
+    </el-dialog>
+    <el-dialog
+      :title="detailTitle2"
+      :visible.sync="main_duty_visible2"
+      center
+      :lock-scroll="false"
+      :modal-append-to-body="false"
+      custom-class="dialog_custom_class2"
+      class="dialog-absolute">
+      <div class="main_duties" :style="{'max-height': part2Height + 'px'}" v-html="main_duties2"></div>
+    </el-dialog>
+    <el-dialog
+      :title="detailTitle2"
+      :visible.sync="snapshot_visible2"
+      center
+      :lock-scroll="false"
+      :modal-append-to-body="false"
+      custom-class="dialog_custom_class2"
+      class="dialog-absolute">
+      <div class="main_duties">
+        <el-carousel :autoplay="false" height="400px">
+          <el-carousel-item v-for="(item, index) in snapshots2" :key="index" >
+            <div class="glimpse-box">
+              <el-image :src="item" fit="cover"></el-image>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </el-dialog>
+  </div>
+  <div class="part2">
+    <h1 class="title2">{{getTitle("ZF")}}</h1>
+    <div class="content2">
+      <div class="period2" v-for="(option, index) in ZFOptions" :key="index">
+        <el-link class="time2" title="查看详情" @click="goto(option, 'ZF')">{{getTime(option, "ZF")}}</el-link>
+        <div class="crews2">
+           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,3)">
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <div>
+              <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+              <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
+              <span class="tenure">{{item.tenure}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <el-button round type="success" @click="showDetails('main_duties', 'ZF', option, 3)">工作内容</el-button>
+          <el-button round type="success" @click="showDetails('summary', 'ZF', option, 3)">工作总结</el-button>
+          <el-button round type="success" @click="showDetails('snapshot', 'ZF', option, 3)">工作掠影</el-button>
+        </div>
+      </div>
+    </div>
+    <el-dialog
+      :title="profileTile3"
+      :visible.sync="profile_visible3"
+      :modal-append-to-body="false"
+      :lock-scroll="false"
+      center
+      class="dialog-absolute"
+      custom-class="dialog_custom_class2">
+      <div class="profile2" :style="{'max-height': part2Height + 'px'}">
+        <div class="profile_photo left">
+          <el-image
+            style="width: 150px; height: 150px"
+            :src="profile3.photo"
+            fit="cover"
+            lazy
+            v-if="profile3.photo"></el-image>
+          <img src="../assets/images/touxiang.jpg" v-else/>
+        </div>
+        <div class="profile_content" v-html="profile3.profile"></div>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
+        <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
+      </span>
+    </el-dialog>
+    <el-dialog
+      :title="detailTitle3"
+      :visible.sync="main_duty_visible3"
+      center
+      :lock-scroll="false"
+      :modal-append-to-body="false"
+      custom-class="dialog_custom_class2"
+      class="dialog-absolute">
+      <div class="main_duties" :style="{'max-height': part2Height + 'px'}" v-html="main_duties3"></div>
+    </el-dialog>
+    <el-dialog
+      :title="detailTitle3"
+      :visible.sync="snapshot_visible3"
+      center
+      :lock-scroll="false"
+      :modal-append-to-body="false"
+      custom-class="dialog_custom_class2"
+      class="dialog-absolute">
+      <div class="main_duties">
+        <el-carousel :autoplay="false" height="400px">
+          <el-carousel-item v-for="(item, index) in snapshots3" :key="index" >
+            <div class="glimpse-box">
+              <el-image :src="item" fit="cover"></el-image>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </el-dialog>
+  </div>
+  <div class="part2">
+    <h1 class="title2">{{getTitle("ZX")}}</h1>
+    <div class="content2">
+      <div class="period2" v-for="(option, index) in ZXOptions" :key="index">
+        <el-link class="time2" title="查看详情" @click="goto(option, 'ZX')">{{getTime(option, "ZX")}}</el-link>
+        <div class="crews2">
+           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,4)">
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <div>
+              <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
+              <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
+              <span class="tenure">{{item.tenure}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <el-button round type="warning" @click="showDetails('main_duties', 'ZX', option, 4)">工作内容</el-button>
+          <el-button round type="warning" @click="showDetails('summary', 'ZX', option, 4)">工作总结</el-button>
+          <el-button round type="warning" @click="showDetails('snapshot', 'ZX', option, 4)">工作掠影</el-button>
+        </div>
+      </div>
+    </div>
+    <el-dialog
+      :title="profileTile4"
+      :visible.sync="profile_visible4"
+      :modal-append-to-body="false"
+      :lock-scroll="false"
+      center
+      class="dialog-absolute"
+      custom-class="dialog_custom_class2">
+      <div class="profile2" :style="{'max-height': part2Height + 'px'}">
+        <div class="profile_photo left">
+          <el-image
+            style="width: 150px; height: 150px"
+            :src="profile4.photo"
+            fit="cover"
+            lazy
+            v-if="profile4.photo"></el-image>
+          <img src="../assets/images/touxiang.jpg" v-else/>
+        </div>
+        <div class="profile_content" v-html="profile4.profile"></div>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
+        <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
+      </span>
+    </el-dialog>
+    <el-dialog
+      :title="detailTitle4"
+      :visible.sync="main_duty_visible4"
+      center
+      :lock-scroll="false"
+      :modal-append-to-body="false"
+      custom-class="dialog_custom_class2"
+      class="dialog-absolute">
+      <div class="main_duties" :style="{'max-height': part2Height + 'px'}" v-html="main_duties4"></div>
+    </el-dialog>
+    <el-dialog
+      :title="detailTitle4"
+      :visible.sync="snapshot_visible4"
+      center
+      :lock-scroll="false"
+      :modal-append-to-body="false"
+      custom-class="dialog_custom_class2"
+      class="dialog-absolute">
+      <div class="main_duties">
+        <el-carousel :autoplay="false" height="400px">
+          <el-carousel-item v-for="(item, index) in snapshots4" :key="index" >
+            <div class="glimpse-box">
+              <el-image :src="item" fit="cover"></el-image>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
     </el-dialog>
   </div>
 </div>
@@ -116,21 +312,48 @@ import Ajax from "@utils/request.js"
 export default {
   data () {
     return {
-      options: [],
-      glimpses: [],
-      main_duty_visible: false,
-      main_duties: '',
-      profileTile: '',
-      profile_visible: false,
-      profile: '',
-      period: 1,
+      ZWOptions: [],
+      RDOptions: [],
+      ZFOptions: [],
+      ZXOptions: [],
       china: ['一','二','三','四','五','六','七','八','九','十','十一','十二','十三', '十四'],
-      curPersonIndex: -1,
-      curGroup: null,
+      explainText: '<div>特别说明：</div><div class="section">玉树州六届人大一次会议以前，均未设立常设机构，闭会期间，其职能由州人民委员会行使，1981年5月自治州第六届人民代表大会第一次会议选举产生了它的常设机关---州人民代表大会常务委员会。</div>',
+      profile_visible1: false,
+      profile_visible2: false,
+      profile_visible3: false,
+      profile_visible4: false,
+      profileTile1: '',
+      profileTile2: '',
+      profileTile3: '',
+      profileTile4: '',
       hasPre: false,
       hasNext: false,
-      detailTitle: '',
-      explainText: '<div>特别说明：</div><div class="section">玉树州六届人大一次会议以前，均未设立常设机构，闭会期间，其职能由州人民委员会行使，1981年5月自治州第六届人民代表大会第一次会议选举产生了它的常设机关---州人民代表大会常务委员会。</div>'
+      profile1: {},
+      profile2: {},
+      profile3: {},
+      profile4: {},
+      curPersonIndex: -1,
+      detailTitle1: '',
+      detailTitle2: '',
+      detailTitle3: '',
+      detailTitle4: '',
+      main_duty_visible1: false,
+      main_duty_visible2: false,
+      main_duty_visible3: false,
+      main_duty_visible4: false,
+      main_duties1: '',
+      main_duties2: '',
+      main_duties3: '',
+      main_duties4: '',
+      snapshot_visible1: false,
+      snapshot_visible2: false,
+      snapshot_visible3: false,
+      snapshot_visible4: false,
+      snapshots1: [],
+      snapshots2: [],
+      snapshots3: [],
+      snapshots4: [],
+      part2Height: 0
     }
   },
   computed:{
@@ -138,11 +361,11 @@ export default {
   },
   methods: {
     // 获取标题
-    getTitle(option) {
+    getTitle(group) {
       let title = '';
-      switch(option.group) {
+      switch(group) {
         case 'ZW':
-          title = "历届州委会领导";
+          title = "历届州委领导";
           break;
         case 'RD':
           title = "历届人大领导";
@@ -157,29 +380,104 @@ export default {
       return title
     },
     // 获取任期时间
-    getTime(option) {
+    getTime(option, group) {
       let time = '';
-      switch(option.group) {
+      switch(group) {
         case 'ZW':
-          time = "玉树州第" + this.china[this.period - 1] + "届州委委员会： " + option.time;
+          time = "中共玉树州委第" + this.china[option.period - 1] + "届委员会： " + option.time;
           break;
         case 'RD':
-          time = "玉树州第" + this.china[this.period - 1] + "届人大常委会： " + option.time;
+          time = "玉树州人大第" + this.china[option.period - 1] + "届常委会： " + option.time;
           break;
         case 'ZF':
-          time = "玉树州第" + this.china[this.period - 1] + "届人代会： " + option.time;
+          time = "玉树州政府第" + this.china[option.period - 1] + "届人代会： " + option.time;
           break;
         case 'ZX':
-          time = "玉树州第" + this.china[this.period - 1] + "届政协委员会" + option.time;
+          time = "玉树州政协第" + this.china[option.period - 1] + "届委员会: " + option.time;
           break;
       }
       return time
     },
-    // 个人简介
-    showProfile(item, index, group) {
-      if(item.id === '0000') return;
+    getFullTitle(option, group, title) {
+      let fulltitle = '';
+      switch(group) {
+        case 'ZW':
+          fulltitle = "玉树州第" + this.china[option.period - 1] + "届州委委员会 -- " + title;
+          break;
+        case 'RD':
+          fulltitle = "玉树州第" + this.china[option.period - 1] + "届人大常委会 --  " + title;
+          break;
+        case 'ZF':
+          fulltitle = "玉树州第" + this.china[option.period - 1] + "届人代会 -- " + title;
+          break;
+        case 'ZX':
+          fulltitle = "玉树州第" + this.china[option.period - 1] + "届政协委员会 -- " + title;
+          break;
+      }
+      return fulltitle
+    },
+    showDetails(type, group, option, flag) {
+      let title = type == 'snapshot' ? "工作掠影" : (type == 'summary' ? '工作总结' : '工作内容');
+      this["detailTitle" + flag] = this.getFullTitle(option, group, title);
+      const _this = this;
+      Ajax({
+        url: '/static/mock/periods/period-' + option.period + '.json',
+      }).then(data => {
+        if(type === 'snapshot') {
+          if(data[group][type] && data[group][type].length) {
+            _this["snapshot_visible" + flag] = true;
+            _this["snapshots" + flag] = data[group][type].map(item =>{
+              item = "/static/mock/glimpses/" + group.toLowerCase() + "/" + item;
+              return item
+            })
+          } else {
+            _this.$notify({
+              title: title,
+              message: '数据采集中，暂无数据',
+              type: 'warning',
+              duration: '1000'
+            });
+          }
+        } else {
+          if(data[group][type]){
+            _this["main_duty_visible" + flag ] = true;
+            let text = "<div class='section'>" + data[group][type] + "</div>"
+            text = text.replace(/\n/g, "\n</div><div class='section'>");
+            _this["main_duties" + flag] = text;
+          } else {
+            _this.$notify({
+              title: title,
+              message: '数据采集中，暂无数据',
+              type: 'warning',
+              duration: '1000'
+            });
+          }
+        }
+      })
+    },
+    // 获取全部数据
+    getWholePeriodData() {
+      const _this = this;
+      Ajax({
+        url: '/static/mock/periods/whole.json',
+      }).then(data => {
+        _this.ZWOptions = data.ZW;
+        _this.RDOptions = data.RD;
+        _this.ZFOptions = data.ZF;
+        _this.ZXOptions = data.ZX;
+      })
+    },
+    goto(option, group) {
+      this.$router.push({
+        name: 'part',
+        params: {
+          option: option,
+          group: group
+        }
+      })
+    },
+    showProfile(item, index, flag) {
       this.curPersonIndex = index;
-      this.curGroup = group;
       this.hasPre = this.checkPre();
       this.hasNext = this.checkNext();
       const _this = this;
@@ -188,12 +486,11 @@ export default {
           url: '/static/mock/profiles/' + item.id + '.json',
         }).then(data => {
           if(data) {
-            _this.profile_visible = true;
-            _this.profileTile = item.name + "个人简介";
-            _this.profile = data.datas;
-            _this.modifyProfile();
+            _this["profile_visible" + flag] = true;
+            _this["profileTile" + flag] = item.name + "  个人简介";
+            _this["profile" + flag] = data.datas;
+            _this.modifyProfile(flag);
           }
-          console.log(data)
         })
       } else {
          this.$notify({
@@ -204,132 +501,65 @@ export default {
         });
       }
     },
-    // 工作内容
-    showDetails(text, type) {
-      this.detailTitle = type === "main_duties" ? "工作内容" : "工作总结";
-      this.main_duty_visible = true;
-      text = "<div class='section'>" + text + "</div>"
-      text = text.replace(/\n/g, "\n</div><div class='section'>");
-      this.main_duties = text;
-    },
-    // 下一届
-    nextPeriod() {
-      this.period++;
-      this.getPeriodData();
-    },
-    // 上一届
-    previousPeriod() {
-      this.period--;
-      this.getPeriodData();
-    },
-    // 获取某一届数据
-    getPeriodData() {
-      const _this = this;
-      Ajax({
-        url: '/static/mock/periods/period-' + this.period + '.json',
-      }).then(data => {
-        console.log(data)
-        _this.options = [];
-        for(let key in data) {
-          data[key]["group"] = key;
-          data[key].snapshot = data[key].snapshot.map(item =>{
-            item = "/static/mock/glimpses/" + key.toLowerCase() + "/" + item;
-            return item
-          })
-          _this.options.push(data[key])
-        }
-      })
-    },
-    prePerson() {
-      let idx = [];
-      let crews = this.getCurCrews().filter((crew, index) => {
-        if(crew.more && index < this.curPersonIndex) {
-          idx.push(index)
-        }
-        return crew.more && index < this.curPersonIndex
-      });
-      this.curPersonIndex = idx.pop();
-      let crew = crews.pop();
-      this.profileTile = crew.name + "个人简介";
-      const _this = this;
-      Ajax({
-        url: '/static/mock/profiles/' + crew.id + '.json',
-      }).then(data => {
-        if(data) {
-          _this.profile = data.datas;
-          _this.modifyProfile();
-        }
-      })
-      this.hasPre = this.checkPre();
-      this.hasNext = this.checkNext();
-    },
-    nextPerson() {
-      let idx = [];
-      let crews = this.getCurCrews().filter((crew, index) => {
-        if(crew.more && index > this.curPersonIndex) {
-          idx.push(index)
-        }
-        return crew.more && index > this.curPersonIndex
-      });
-      this.curPersonIndex = idx.shift();
-      let crew = crews.shift();
-      this.profileTile = crew.name + "个人简介";
-      const _this = this;
-      Ajax({
-        url: '/static/mock/profiles/' + crew.id + '.json',
-      }).then(data => {
-        if(data) {
-          _this.profile = data.datas;
-          _this.modifyProfile();
-        }
-      })
-      this.hasPre = this.checkPre();
-      this.hasNext = this.checkNext();
-    },
-    getCurCrews() {
-      return this.options.filter(option => {
-        return option.group === this.curGroup
-      })[0].crews;
+    modifyProfile(flag) {
+      if(this["profile" + flag].photo.length) {
+        this["profile" + flag].photo = "/static/mock/photos/" + this["profile" + flag].photo[0];
+      } else {
+        this["profile" + flag].photo = ""
+      }
+      if(this["profile" + flag].profile) {
+        let text = "<div class='section'>" + this["profile" + flag].profile + "</div>"
+        text = text.replace(/\n/g, "\n</div><div class='section'>");
+        this["profile" + flag].profile = text;
+      } else {
+        this["profile" + flag].profile = '数据采集中，暂无数据'
+      }
     },
     checkPre() {
       let pre = false;
-      if(this.curPersonIndex > 0) {
-        const _this = this;
-        let crews = this.getCurCrews();
-        crews.forEach((crew, index) => {
-          if(crew.more && _this.curPersonIndex > index) pre = true;
-        })
-      }
+      // if(this.curPersonIndex > 0) {
+      //   const _this = this;
+      //   let crews = this.getCurCrews();
+      //   crews.forEach((crew, index) => {
+      //     if(crew.more && _this.curPersonIndex > index) pre = true;
+      //   })
+      // }
       return pre
     },
     checkNext() {
       let next = false;
-      if(this.curPersonIndex > -1) {
-        const _this = this;
-        let crews = this.getCurCrews();
-        crews.forEach((crew, index) => {
-          if(crew.more && _this.curPersonIndex < index) next = true;
-        })
-      }
+      // if(this.curPersonIndex > -1) {
+      //   const _this = this;
+      //   let crews = this.getCurCrews();
+      //   crews.forEach((crew, index) => {
+      //     if(crew.more && _this.curPersonIndex < index) next = true;
+      //   })
+      // }
       return next
     },
-    modifyProfile() {
-      if(this.profile.photo.length) {
-        this.profile.photo = "/static/mock/photos/" + this.profile.photo[0];
-      } else {
-        this.profile.photo = ""
-      }
-      if(this.profile.profile) {
-        let text = "<div class='section'>" + this.profile.profile + "</div>"
-        text = text.replace(/\n/g, "\n</div><div class='section'>");
-        this.profile.profile = text;
-      } else {
-        this.profile.profile = '数据采集中，暂无数据'
-      }
+    prePerson() {
+
+    },
+    nextPerson() {
+
     }
   },
+  created() {
+    // ...
+  },
   mounted() {
-    this.getPeriodData();
+    let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
+    borderDom.style.maxWidth = "initial";
+    borderDom.style.maxHeight = "initial";
+    borderDom.style.minWidth = "3840px";
+    borderDom.style.minHeight = "1080px";
+    this.getWholePeriodData();
+    let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
+    let container2Dom = document.getElementsByClassName("container2")[0];
+    container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
+    let part2 = document.getElementsByClassName("part2")[0].getBoundingClientRect();
+    console.log(part2)
+    this.part2Height = part2.height * 0.6
   }
 }
 </script>

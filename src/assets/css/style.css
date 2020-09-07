@@ -76,6 +76,9 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 *{
   box-sizing: border-box;
 }
+[v-cloak] {
+  display: none;
+}
 
 .ys-electronic-board {
   width: 100%;
@@ -244,7 +247,6 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   letter-spacing: 0.33em;
 }
 .main_duties {
-  max-height: 500px;
   overflow: auto;
 }
 .main_duties .section, .profile_content .section {
@@ -368,21 +370,21 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 /*方案二*/
 .container2 {
   position: relative;
-  padding-top: 13.3%;
+  padding-top: 8.5%;
   width: 100%;
-  padding-left: 5.5%;
-  padding-right: 5.5%;
-  height: 90.2%;
+  padding-left: 1.2%;
+  padding-right: 1.2%;
+  height: 98.5%;
 }
 .part2 {
   position: relative;
   float: left;
-  width: 23.5%;
+  width: 24.4%;
   height: 100%;
-  margin-left: 2%;
+  margin-left: 0.8%;
   padding: 0.6%;
   background: #BA0003;
-  border-radius: 2%;
+  border-radius: 1.5%;
   user-select: none;
 }
 .part2:first-child {
@@ -402,14 +404,14 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .title2 {
   position: absolute;
   text-align: center;
-  top: -10%;
+  top: -5.5%;
   left: 0;
   font-size: 24px;
   padding: 10px 5px;
   width: 100%;
   letter-spacing: 0.2em;
-  color: #FDAE0C;
-  text-shadow: 5px 5px 20px #000;
+  color: rgba(255,255,0, 0.7);
+  text-shadow: 5px 5px 10px #000;
 }
 .time2 {
   font-size: 18px;
@@ -443,7 +445,6 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   float: none;
 }
 .profile2 {
-  max-height: 60vh;
   overflow: auto;
   margin: 10px 17px;
 }
@@ -493,4 +494,10 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   background: rgba(31,45,61,.23);
   border: none;
   color: #FFF;
+}
+.el-dialog__wrapper.dialog-absolute, .el-dialog__wrapper.dialog-absolute+.v-modal {
+  position: absolute;
+}
+.dialog_custom_class2 {
+  width: 80%;
 }
