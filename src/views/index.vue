@@ -7,7 +7,7 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZW')">{{getTime(option, "ZW")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index, 1)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <el-avatar shape="square" :size="80" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -83,7 +83,7 @@
         <el-link class="time2" title="查看详情"  @click="goto(option, 'RD')">{{getTime(option, "RD")}}</el-link>
         <div class="crews2">
           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,2)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <el-avatar shape="square" :size="80" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -159,7 +159,7 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZF')">{{getTime(option, "ZF")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,3)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <el-avatar shape="square" :size="80" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -235,7 +235,7 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZX')">{{getTime(option, "ZX")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,4)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+            <el-avatar shape="square" :size="80" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -548,18 +548,17 @@ export default {
     // ...
   },
   mounted() {
-    let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
-    borderDom.style.maxWidth = "initial";
-    borderDom.style.maxHeight = "initial";
-    borderDom.style.minWidth = "3840px";
-    borderDom.style.minHeight = "1080px";
+    // let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
+    // borderDom.style.maxWidth = "initial";
+    // borderDom.style.maxHeight = "initial";
+    // borderDom.style.minWidth = "3840px";
+    // borderDom.style.minHeight = "1080px";
     this.getWholePeriodData();
-    let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
-    let container2Dom = document.getElementsByClassName("container2")[0];
-    container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
+    // let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
+    // let container2Dom = document.getElementsByClassName("container2")[0];
+    // container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
     let part2 = document.getElementsByClassName("part2")[0].getBoundingClientRect();
-    console.log(part2)
-    this.part2Height = part2.height * 0.6
+    this.part2Height = part2.height * 0.55
   }
 }
 </script>

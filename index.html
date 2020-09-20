@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Production</title>
+    <script type="text/javascript">
+      var gui = require('nw.gui');
+      var win = gui.Window.get();
+      document.addEventListener('keydown', function(e) {
+        if (e.which == 27) {
+          win.toggleFullscreen()
+        }
+      }, false);
+    </script>
   </head>
   <body>
     <noscript>

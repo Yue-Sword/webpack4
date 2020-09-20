@@ -305,15 +305,15 @@ export default {
   		this.option = this.$route.params.option;
       this.group = this.$route.params.group;
       this.period = this.option.period;
-      let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
-      borderDom.style.maxWidth = "1920px";
-      borderDom.style.maxHeight = "1080px";
-      borderDom.style.minWidth = "initial";
-      borderDom.style.minHeight = "initial";
+      // let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
+      // borderDom.style.maxWidth = "1920px";
+      // borderDom.style.maxHeight = "1080px";
+      // borderDom.style.minWidth = "initial";
+      // borderDom.style.minHeight = "initial";
       this.getPeriodData();
-      let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
-      let container2Dom = document.getElementsByClassName("container2")[0];
-      container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
+      // let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
+      // let container2Dom = document.getElementsByClassName("container2")[0];
+      // container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
   	}else{
   		history.back();
   	}

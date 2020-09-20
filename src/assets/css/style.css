@@ -81,11 +81,9 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 
 .ys-electronic-board {
-  width: 100%;
-  height: 100vh;
   position: relative;
-  min-width: 3840px;
-  min-height: 1080px;
+  width: 5760px;
+  height: 2160px;
   background: url('../images/bg.jpg') no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
@@ -100,7 +98,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .iconfont {
   font-family:"iconfont";
-  font-size: 16px;
+  font-size: 32px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -162,7 +160,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .header {
   margin: 40px auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: 700;
 }
 .container{
@@ -187,7 +185,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   border: 4px solid #FCF5BE;
   padding: 25px;
 }
-.content::-webkit-scrollbar {
+.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   display: none;
 }
 .title {
@@ -195,27 +193,25 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   text-align: center;
   top: -160px;
   left: 0;
-  font-size: 40px;
+  font-size: 80px;
   padding: 30px 20px;
   width: 100%;
   color: black;
 }
 .time {
-  line-height: 40px;
+  line-height: 80px;
   margin: 10px 0 30px 20px;
-  font-size: 30px;
+  font-size: 60px;
 }
 .member {
   cursor: pointer;
   user-select: none;
   width: 50%;
-  line-height: 30px;
+  line-height: 60px;
   writing-mode: lr-tb;
   display: inline-block;
-  line-height: 50px;
   padding-left: 50px;
-/*  font-size: 20px;*/
-  font-size: 16px;
+  font-size: 32px;
 }
 .member>span{
   float: left;
@@ -253,13 +249,13 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   text-align: justify;
   white-space: pre-line;
   text-indent: 2em;
-  font-size: 24px;
+  font-size: 48px;
 }
 .main_duty {
   margin:  5px 0 15px 20px;
-  font-size: 20px;
-  line-height: 30px;
-  height: 30px;
+  font-size: 40px;
+  line-height: 60px;
+  height: 60px;
 }
 .main_duty_label {
   float: left;
@@ -267,11 +263,11 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .main_duty_link {
   /*font-size: 24px;*/
-  font-size: 14px;
+  font-size: 28px;
 }
 .glimpse_label {
-  line-height: 30px;
-  font-size:  20px;
+  line-height: 60px;
+  font-size:  40px;
   margin: 5px 0 15px 20px;
 }
 .snapshot {
@@ -323,9 +319,9 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .explain {
   padding: 60px 10px 20px 30px;
-  font-size: 20px;
+  font-size: 40px;
   color: yellow;
-  line-height: 40px;
+  line-height: 80px;
 }
 .explain .section {
   text-align: justify;
@@ -339,7 +335,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .el-carousel__arrow {
   width: 60px;
   height: 60px;
-  font-size: 24px;
+  font-size: 48px;
 }
 .el-link.el-link--default.is-disabled {
   color: #606266;
@@ -348,18 +344,18 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   padding: 60px 20px 40px;
 }
 .dialog_custom_class .el-dialog__title {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 60px;
+  line-height: 80px;
   font-weight: 700;
 }
 .dialog_custom_class .el-dialog__headerbtn {
-  font-size: 30px
+  font-size: 60px
 }
 .dialog_custom_class .el-dialog__footer {
   padding: 40px 20px;
 }
 .dialog-footer .el-button {
-  font-size: 24px;
+  font-size: 48px;
 }
 .warning-color {
   color: yellow;
@@ -374,7 +370,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   width: 100%;
   padding-left: 1.2%;
   padding-right: 1.2%;
-  height: 98.5%;
+  height: 96.5%;
 }
 .part2 {
   position: relative;
@@ -406,7 +402,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   text-align: center;
   top: -5.5%;
   left: 0;
-  font-size: 24px;
+  font-size: 48px;
   padding: 10px 5px;
   width: 100%;
   letter-spacing: 0.2em;
@@ -414,7 +410,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   text-shadow: 5px 5px 10px #000;
 }
 .time2 {
-  font-size: 18px;
+  font-size: 36px;
   margin-bottom: 1%;
   cursor: pointer;
   user-select: none;
@@ -424,12 +420,12 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   color: initial;
 }
 .member2 {
-  min-width: 45%;
+  min-width: 50%;
   writing-mode: lr-tb;
   display: inline-block;
-  font-size: 16px;
+  font-size: 32px;
   margin-left: 3%;
-  min-height: 50px;
+  min-height: 80px;
   padding-bottom: 10px;
   cursor: pointer;
 }
@@ -446,24 +442,23 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .profile2 {
   overflow: auto;
-  margin: 10px 17px;
 }
 .dialog_custom_class2 .el-dialog__header {
   padding: 30px 10px 20px;
 }
 .dialog_custom_class2 .el-dialog__title {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 48px;
+  line-height: 60px;
   font-weight: 700;
 }
 .dialog_custom_class2 .el-dialog__headerbtn {
-  font-size: 24px
+  font-size: 48px
 }
 .dialog_custom_class2 .el-dialog__footer {
   padding: 20px 10px;
 }
 .dialog-footer2 .el-button {
-  font-size: 16px;
+  font-size: 32px;
 }
 .menu-actions {
   padding: 20px;
@@ -478,8 +473,8 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   margin: 0 auto;
 }
 .member2>div {
-  margin-left: 60px;
-  line-height: 50px;
+  margin-left: 80px;
+  line-height: 80px;
 }
 .btn-group {
   padding: 10px 0 20px;
