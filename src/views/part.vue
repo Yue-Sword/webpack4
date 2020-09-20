@@ -63,7 +63,6 @@
   <el-dialog
     :title="detailTitle"
     :visible.sync="main_duty_visible"
-    width="900px"
     center
     append-to-body
     custom-class="dialog_custom_class2">
@@ -72,7 +71,6 @@
   <el-dialog
     :title="profileTile"
     :visible.sync="profile_visible"
-    width="900px"
     center
     append-to-body
     custom-class="dialog_custom_class2">
