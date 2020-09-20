@@ -1,11 +1,11 @@
 <template>
-<div class="container2" style="height: 90.5%">
-  <div class="part2 part-alone">
-    <div class="content2">
+<div class="container2" style="padding-top: 3.5%; height: 92.5%; padding-left: 4%;padding-right: 4%;">
+  <div class="part2 part-alone" style="padding: 1.5% 1.5%;border-radius: 100px;">
+    <div class="content2" style="padding: 0.5% 1%;">
     	<div class="main_duty" v-cloak>{{main_duty_title}}</div>
       <div class="crews-alone">
         <div class="member clearfix" v-for="(item, index) in options.crews" :key="index" @click="showProfile(item, index, group)">
-          <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+          <el-avatar shape="square" :size="80" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
           <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
           <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
           <span class="tenure">{{item.tenure}}</span>
@@ -37,9 +37,9 @@
       </div>
       <div class="snapshot">
         <div class="glimpse_label">工作掠影</div>
-        <el-carousel :autoplay="false" height="400px" v-if="options.snapshot && options.snapshot.length">
+        <el-carousel :autoplay="false" height="800px" v-if="options.snapshot && options.snapshot.length">
           <el-carousel-item v-for="(item, index) in options.snapshot" :key="index">
-            <div class="glimpse-box">
+            <div class="glimpse-box" style="margin: 0 auto;max-width: 20%;height: 760px;">
               <el-image :src="item" fit="cover"></el-image>
             </div>
           </el-carousel-item>
@@ -79,7 +79,7 @@
     <div class="profile2" style="maxHeight: 60vh">
       <div class="profile_photo left">
         <el-image
-          style="width: 150px; height: 150px"
+          style="width: 160px; height: 200px"
           :src="profile.photo"
           fit="cover"
           lazy

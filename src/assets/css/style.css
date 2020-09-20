@@ -82,7 +82,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 
 .ys-electronic-board {
   position: relative;
-  width: 5760px;
+  width: 11520px;
   height: 2160px;
   background: url('../images/bg.jpg') no-repeat;
   background-size: 100% 100%;
@@ -206,12 +206,13 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .member {
   cursor: pointer;
   user-select: none;
-  width: 50%;
-  line-height: 60px;
+  width: 46%;
+  line-height: 80px;
   writing-mode: lr-tb;
   display: inline-block;
   padding-left: 50px;
   font-size: 32px;
+  margin: 10px;
 }
 .member>span{
   float: left;
@@ -244,15 +245,16 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .main_duties {
   overflow: auto;
+  padding: 20px 40px;
 }
 .main_duties .section, .profile_content .section {
   text-align: justify;
   white-space: pre-line;
   text-indent: 2em;
-  font-size: 48px;
+  font-size: 36px;
 }
 .main_duty {
-  margin:  5px 0 15px 20px;
+  margin:  20px 0 35px 20px;
   font-size: 40px;
   line-height: 60px;
   height: 60px;
@@ -262,7 +264,6 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   margin-right: 50px;
 }
 .main_duty_link {
-  /*font-size: 24px;*/
   font-size: 28px;
 }
 .glimpse_label {
@@ -275,7 +276,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .glimpse-box {
   max-width: 100%;
-  height: 400px;
+  height: 600px;
   text-align: center;
 }
 .glimpse-box img {
@@ -283,7 +284,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 360px;
+  max-height: 800px;
   margin: 0 auto;
 }
 .glimpses-empty {
@@ -314,8 +315,8 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .profile_photo img {
   display: block;
-  max-height:150px;
-  max-width: 150px;
+  max-height:200px;
+  max-width: 160px;
 }
 .explain {
   padding: 60px 10px 20px 30px;
@@ -366,7 +367,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 /*方案二*/
 .container2 {
   position: relative;
-  padding-top: 8.5%;
+  padding-top: 4.5%;
   width: 100%;
   padding-left: 1.2%;
   padding-right: 1.2%;
@@ -388,7 +389,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .content2 {
   position: relative;
-  padding: 2%;
+  padding: 1% 2%;
   width: 100%;
   height: 100%;
   border: 1px solid #FCF5BE;
@@ -400,10 +401,10 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .title2 {
   position: absolute;
   text-align: center;
-  top: -5.5%;
+  top: -9.5%;
   left: 0;
   font-size: 48px;
-  padding: 10px 5px;
+  padding: 20px 10px;
   width: 100%;
   letter-spacing: 0.2em;
   color: rgba(255,255,0, 0.7);
@@ -420,7 +421,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   color: initial;
 }
 .member2 {
-  min-width: 50%;
+  min-width: 46%;
   writing-mode: lr-tb;
   display: inline-block;
   font-size: 32px;
@@ -433,7 +434,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   float: left;
 }
 .period2 {
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 2%;
 }
 .part-alone {
@@ -442,9 +443,10 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .profile2 {
   overflow: auto;
+  padding: 20px 40px;
 }
 .dialog_custom_class2 .el-dialog__header {
-  padding: 30px 10px 20px;
+  padding: 60px 10px 20px;
 }
 .dialog_custom_class2 .el-dialog__title {
   font-size: 48px;
@@ -461,8 +463,13 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   font-size: 32px;
 }
 .menu-actions {
-  padding: 20px;
+  padding: 40px;
   text-align: center;
+}
+.menu-actions  button.is-round{
+  font-size: 32px;
+  padding: 20px 40px;
+  border-radius: 40px;
 }
 .member .el-avatar, .member2 .el-avatar {
   background: rgba(31,45,61,.11);
@@ -477,14 +484,18 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   line-height: 80px;
 }
 .btn-group {
-  padding: 10px 0 20px;
+  padding: 20px 0 40px;
   text-align: center;
 }
-.btn-group button {
+.btn-group button.is-round {
   background: rgba(31,45,61,.11);
   border: none;
   color: #FFF;
+  font-size: 32px;
+  padding: 20px 40px;
+  border-radius: 40px;
 }
+
 .btn-group button:hover, .btn-group button:active, .btn-group button:focus {
   background: rgba(31,45,61,.23);
   border: none;
@@ -495,4 +506,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .dialog_custom_class2 {
   width: 80%;
+}
+.profile_content {
+  font-size: 36px;
 }
