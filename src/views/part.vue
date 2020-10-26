@@ -1,7 +1,7 @@
 <template>
-<div class="container2" style="height: 90.5%">
+<div class="container2" style="height: 95.5%;padding-top: 3%; padding-left: 5%; padding-right: 5%;">
   <div class="part2 part-alone">
-    <div class="content2">
+    <div class="content2" style="padding: 0.5% 1%;">
     	<div class="main_duty" v-cloak>{{main_duty_title}}</div>
       <div class="crews-alone">
         <div class="member clearfix" v-for="(item, index) in options.crews" :key="index" @click="showProfile(item, index, group)">

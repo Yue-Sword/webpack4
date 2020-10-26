@@ -83,7 +83,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .ys-electronic-board {
   position: relative;
   width: 5760px;
-  height: 2160px;
+  height: 1080px;
   background: url('../images/bg.jpg') no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
@@ -98,7 +98,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .iconfont {
   font-family:"iconfont";
-  font-size: 32px;
+  font-size: 16px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -160,7 +160,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .header {
   margin: 40px auto;
   text-align: center;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 700;
 }
 .container{
@@ -185,7 +185,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   border: 4px solid #FCF5BE;
   padding: 25px;
 }
-.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
+body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   display: none;
 }
 .title {
@@ -193,7 +193,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   text-align: center;
   top: -160px;
   left: 0;
-  font-size: 80px;
+  font-size: 40px;
   padding: 30px 20px;
   width: 100%;
   color: black;
@@ -201,7 +201,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .time {
   line-height: 80px;
   margin: 10px 0 30px 20px;
-  font-size: 60px;
+  font-size: 30px;
 }
 .member {
   cursor: pointer;
@@ -211,7 +211,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   writing-mode: lr-tb;
   display: inline-block;
   padding-left: 50px;
-  font-size: 32px;
+  font-size: 20px;
 }
 .member>span{
   float: left;
@@ -245,15 +245,18 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .main_duties {
   overflow: auto;
 }
+.profile_content {
+  font-size: 18px;
+}
 .main_duties .section, .profile_content .section {
   text-align: justify;
   white-space: pre-line;
   text-indent: 2em;
-  font-size: 48px;
+  font-size: 24px;
 }
 .main_duty {
   margin:  5px 0 15px 20px;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 60px;
   height: 60px;
 }
@@ -263,11 +266,11 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .main_duty_link {
   /*font-size: 24px;*/
-  font-size: 28px;
+  font-size: 20px;
 }
 .glimpse_label {
   line-height: 60px;
-  font-size:  40px;
+  font-size:  24px;
   margin: 5px 0 15px 20px;
 }
 .snapshot {
@@ -319,7 +322,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .explain {
   padding: 60px 10px 20px 30px;
-  font-size: 40px;
+  font-size: 20px;
   color: yellow;
   line-height: 80px;
 }
@@ -335,7 +338,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .el-carousel__arrow {
   width: 60px;
   height: 60px;
-  font-size: 48px;
+  font-size: 24px;
 }
 .el-link.el-link--default.is-disabled {
   color: #606266;
@@ -344,18 +347,18 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   padding: 60px 20px 40px;
 }
 .dialog_custom_class .el-dialog__title {
-  font-size: 60px;
+  font-size: 30px;
   line-height: 80px;
   font-weight: 700;
 }
 .dialog_custom_class .el-dialog__headerbtn {
-  font-size: 60px
+  font-size: 30px
 }
 .dialog_custom_class .el-dialog__footer {
   padding: 40px 20px;
 }
 .dialog-footer .el-button {
-  font-size: 48px;
+  font-size: 24px;
 }
 .warning-color {
   color: yellow;
@@ -366,11 +369,11 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 /*方案二*/
 .container2 {
   position: relative;
-  padding-top: 8.5%;
+  padding-top: 3.5%;
   width: 100%;
   padding-left: 1.2%;
   padding-right: 1.2%;
-  height: 96.5%;
+  height: 93.5%;
 }
 .part2 {
   position: relative;
@@ -400,9 +403,9 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .title2 {
   position: absolute;
   text-align: center;
-  top: -5.5%;
+  top: -7%;
   left: 0;
-  font-size: 48px;
+  font-size: 30px;
   padding: 10px 5px;
   width: 100%;
   letter-spacing: 0.2em;
@@ -410,7 +413,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   text-shadow: 5px 5px 10px #000;
 }
 .time2 {
-  font-size: 36px;
+  font-size: 24px;
   margin-bottom: 1%;
   cursor: pointer;
   user-select: none;
@@ -420,10 +423,10 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   color: initial;
 }
 .member2 {
-  min-width: 50%;
+  min-width: 47%;
   writing-mode: lr-tb;
   display: inline-block;
-  font-size: 32px;
+  font-size: 20px;
   margin-left: 3%;
   min-height: 80px;
   padding-bottom: 10px;
@@ -439,6 +442,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .part-alone {
   width: 100%;
   float: none;
+  border-radius: 30px;
 }
 .profile2 {
   overflow: auto;
@@ -447,22 +451,25 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   padding: 30px 10px 20px;
 }
 .dialog_custom_class2 .el-dialog__title {
-  font-size: 48px;
+  font-size: 24px;
   line-height: 60px;
   font-weight: 700;
 }
 .dialog_custom_class2 .el-dialog__headerbtn {
-  font-size: 48px
+  font-size: 24px
 }
 .dialog_custom_class2 .el-dialog__footer {
   padding: 20px 10px;
 }
 .dialog-footer2 .el-button {
-  font-size: 32px;
+  font-size: 16px;
 }
 .menu-actions {
   padding: 20px;
   text-align: center;
+}
+.menu-actions button {
+  font-size: 18px;
 }
 .member .el-avatar, .member2 .el-avatar {
   background: rgba(31,45,61,.11);
@@ -473,8 +480,8 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   margin: 0 auto;
 }
 .member2>div {
-  margin-left: 80px;
-  line-height: 80px;
+  margin-left: 60px;
+  line-height: 50px;
 }
 .btn-group {
   padding: 10px 0 20px;
@@ -484,6 +491,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
   background: rgba(31,45,61,.11);
   border: none;
   color: #FFF;
+  font-size: 18px;
 }
 .btn-group button:hover, .btn-group button:active, .btn-group button:focus {
   background: rgba(31,45,61,.23);
