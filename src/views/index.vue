@@ -33,7 +33,7 @@
       <div class="profile2" :style="{'max-height': part2Height + 'px'}">
         <div class="profile_photo left">
           <el-image
-            style="width: 150px; height: 150px"
+            style="width: 160px; height: 200px"
             :src="profile1.photo"
             fit="cover"
             lazy
@@ -66,7 +66,7 @@
       custom-class="dialog_custom_class2"
       class="dialog-absolute">
       <div class="main_duties">
-        <el-carousel :autoplay="false" height="400px">
+        <el-carousel :autoplay="false" height="800px">
           <el-carousel-item v-for="(item, index) in snapshots1" :key="index" >
             <div class="glimpse-box">
               <el-image :src="item" fit="cover"></el-image>
@@ -109,7 +109,7 @@
       <div class="profile2" :style="{'max-height': part2Height + 'px'}">
         <div class="profile_photo left">
           <el-image
-            style="width: 150px; height: 150px"
+            style="width: 160px; height: 200px"
             :src="profile2.photo"
             fit="cover"
             lazy
@@ -142,7 +142,7 @@
       custom-class="dialog_custom_class2"
       class="dialog-absolute">
       <div class="main_duties">
-        <el-carousel :autoplay="false" height="400px">
+        <el-carousel :autoplay="false" height="800px">
           <el-carousel-item v-for="(item, index) in snapshots2" :key="index" >
             <div class="glimpse-box">
               <el-image :src="item" fit="cover"></el-image>
@@ -185,7 +185,7 @@
       <div class="profile2" :style="{'max-height': part2Height + 'px'}">
         <div class="profile_photo left">
           <el-image
-            style="width: 150px; height: 150px"
+            style="width: 160px; height: 200px"
             :src="profile3.photo"
             fit="cover"
             lazy
@@ -218,7 +218,7 @@
       custom-class="dialog_custom_class2"
       class="dialog-absolute">
       <div class="main_duties">
-        <el-carousel :autoplay="false" height="400px">
+        <el-carousel :autoplay="false" height="800px">
           <el-carousel-item v-for="(item, index) in snapshots3" :key="index" >
             <div class="glimpse-box">
               <el-image :src="item" fit="cover"></el-image>
@@ -261,7 +261,7 @@
       <div class="profile2" :style="{'max-height': part2Height + 'px'}">
         <div class="profile_photo left">
           <el-image
-            style="width: 150px; height: 150px"
+            style="width: 160px; height: 200px"
             :src="profile4.photo"
             fit="cover"
             lazy
@@ -294,7 +294,7 @@
       custom-class="dialog_custom_class2"
       class="dialog-absolute">
       <div class="main_duties">
-        <el-carousel :autoplay="false" height="400px">
+        <el-carousel :autoplay="false" height="800px">
           <el-carousel-item v-for="(item, index) in snapshots4" :key="index" >
             <div class="glimpse-box">
               <el-image :src="item" fit="cover"></el-image>
@@ -558,7 +558,7 @@ export default {
     // let container2Dom = document.getElementsByClassName("container2")[0];
     // container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
     let part2 = document.getElementsByClassName("part2")[0].getBoundingClientRect();
-    this.part2Height = part2.height * 0.55
+    this.part2Height = part2.height * 0.6
   }
 }
 </script>
