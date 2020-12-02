@@ -8,6 +8,8 @@ import "./assets/css/style.css"
 const Vue = window.Vue;
 Vue.use(ElementUI);
 
+Vue.prototype.$localhost = "http://localhost:4000"
+
 new Vue({
   el: '#app',
   router,

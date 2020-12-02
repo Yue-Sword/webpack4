@@ -7,7 +7,7 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZW', ZWOptions)">{{getTime(option, "ZW")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, 1)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
+            <el-avatar shape="square" :size="50" :src="$localhost + '/static/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -34,7 +34,7 @@
         <div class="profile_photo left">
           <el-image
             style="width: 160px; height: 200px"
-            :src="profile1.photo"
+            :src="$localhost + '/static/photos/' + profile1.photo"
             fit="cover"
             lazy
             v-if="profile1.photo"></el-image>
@@ -65,7 +65,7 @@
         <el-carousel :autoplay="false" height="800px">
           <el-carousel-item v-for="(item, index) in snapshots1" :key="index" >
             <div class="glimpse-box">
-              <el-image :src="item" fit="cover"></el-image>
+              <el-image :src="$localhost + '/static/glimpses/zw/' + item" fit="cover"></el-image>
             </div>
           </el-carousel-item>
         </el-carousel>
@@ -79,7 +79,7 @@
         <el-link class="time2" title="查看详情"  @click="goto(option, 'RD', RDOptions)">{{getTime(option, "RD")}}</el-link>
         <div class="crews2">
           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, 2)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
+            <el-avatar shape="square" :size="50" :src="$localhost + '/static/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -106,7 +106,7 @@
         <div class="profile_photo left">
           <el-image
             style="width: 160px; height: 200px"
-            :src="profile2.photo"
+            :src="$localhost + '/static/photos/' + profile2.photo"
             fit="cover"
             lazy
             v-if="profile2.photo"></el-image>
@@ -137,7 +137,7 @@
         <el-carousel :autoplay="false" height="800px">
           <el-carousel-item v-for="(item, index) in snapshots2" :key="index" >
             <div class="glimpse-box">
-              <el-image :src="item" fit="cover"></el-image>
+              <el-image :src="$localhost + '/static/glimpses/rd/' + item" fit="cover"></el-image>
             </div>
           </el-carousel-item>
         </el-carousel>
@@ -151,7 +151,7 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZF', ZFOptions)">{{getTime(option, "ZF")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, 3)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
+            <el-avatar shape="square" :size="50" :src="$localhost + '/static/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -178,7 +178,7 @@
         <div class="profile_photo left">
           <el-image
             style="width: 160px; height: 200px"
-            :src="profile3.photo"
+            :src="$localhost + '/static/photos/' + profile3.photo"
             fit="cover"
             lazy
             v-if="profile3.photo"></el-image>
@@ -209,7 +209,7 @@
         <el-carousel :autoplay="false" height="800px">
           <el-carousel-item v-for="(item, index) in snapshots3" :key="index" >
             <div class="glimpse-box">
-              <el-image :src="item" fit="cover"></el-image>
+              <el-image :src="$localhost + '/static/glimpses/zf/' + item" fit="cover"></el-image>
             </div>
           </el-carousel-item>
         </el-carousel>
@@ -223,7 +223,7 @@
         <el-link class="time2" title="查看详情" @click="goto(option, 'ZX', ZXOptions)">{{getTime(option, "ZX")}}</el-link>
         <div class="crews2">
            <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, 4)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
+            <el-avatar shape="square" :size="50" :src="$localhost + '/static/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -250,7 +250,7 @@
         <div class="profile_photo left">
           <el-image
             style="width: 160px; height: 200px"
-            :src="profile4.photo"
+            :src="$localhost + '/static/photos/' + profile4.photo"
             fit="cover"
             lazy
             v-if="profile4.photo"></el-image>
@@ -281,7 +281,7 @@
         <el-carousel :autoplay="false" height="800px">
           <el-carousel-item v-for="(item, index) in snapshots4" :key="index" >
             <div class="glimpse-box">
-              <el-image :src="item" fit="cover"></el-image>
+              <el-image :src="$localhost + '/static/glimpses/zx/' + item" fit="cover"></el-image>
             </div>
           </el-carousel-item>
         </el-carousel>
@@ -292,7 +292,7 @@
 </template>
 <script>
 import Ajax from "@utils/request.js"
-import { getChineseNum } from "@utils"
+import { getChineseNum, readFileSync } from "@utils"
 
 export default {
   data () {
@@ -406,10 +406,6 @@ export default {
         case "snapshot": 
           if(option.snapshot && option.snapshot.length) {
             this["snapshot_visible" + flag] = true;
-            this["snapshots" + flag] = option.snapshot.map(item =>{
-              item = "/static/mock/glimpses/" + group.toLowerCase() + "/" + item;
-              return item
-            })
           } else {
             this.emptyNotice(title)
           }
@@ -437,15 +433,24 @@ export default {
     },
     // 获取全部数据
     getWholePeriodData() {
-      const _this = this;
-      Ajax({
-        url: '/static/mock/whole.json',
-      }).then(data => {
-        _this.ZWOptions = data.ZW;
-        _this.RDOptions = data.RD;
-        _this.ZFOptions = data.ZF;
-        _this.ZXOptions = data.ZX;
-      })
+      const whole = readFileSync();
+      if(whole) {
+        console.log("readFileSync:", whole);
+        this.prepareData(whole)
+      } else {
+        const _this = this;
+        Ajax({
+          url: '/static/mock/whole.json',
+        }).then(data => {
+          _this.prepareData(data)
+        })
+      }
+    },
+    prepareData(data) {
+      this.ZWOptions = data.ZW;
+      this.RDOptions = data.RD;
+      this.ZFOptions = data.ZF;
+      this.ZXOptions = data.ZX;
     },
     goto(option, group, options) {
       this.$router.push({
@@ -458,12 +463,11 @@ export default {
       })
     },
     showProfile(item, flag) {
-      console.log(item, flag)
       if(item.more){
         this["profile_visible" + flag] = true;
         this["profileTile" + flag] = item.name + "  个人简介";
         this["profile" + flag] = {
-          photo: item.photo,
+          photo: item.photo[0],
           profile: item.profile
         };
         this.modifyProfile(flag);
@@ -472,11 +476,6 @@ export default {
       }
     },
     modifyProfile(flag) {
-      if(this["profile" + flag].photo.length) {
-        this["profile" + flag].photo = "/static/mock/photos/" + this["profile" + flag].photo[0];
-      } else {
-        this["profile" + flag].photo = ""
-      }
       if(this["profile" + flag].profile) {
         let text = "<div class='section'>" + this["profile" + flag].profile + "</div>"
         text = text.replace(/\n/g, "\n</div><div class='section'>");

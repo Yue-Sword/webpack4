@@ -13,6 +13,17 @@ const getChineseNum = function(num) {
   return Cnum
 }
 
+// node fs 同步读取文件
+const readFileSync = () => {
+  if(window.NODE_PATH && window.NODE_FS) {
+    const filePath = NODE_PATH.resolve('../../public')
+    const whole = NODE_FS.readFileSync(filePath + '/whole.json');
+    return JSON.parse(whole.toString())
+  }
+  return
+}
+
 export {
-	getChineseNum
+	getChineseNum,
+  readFileSync
 }

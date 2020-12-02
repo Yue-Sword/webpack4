@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Production</title>
     <script type="text/javascript">
+      window.NODE_FS = require("fs");
+      window.NODE_PATH = require("path");
       var gui = require('nw.gui');
       var win = gui.Window.get();
       document.addEventListener('keydown', function(e) {
         if (e.which == 27) {
           win.toggleFullscreen()
         }
-      }, false);
+      }, false)
     </script>
   </head>
   <body>

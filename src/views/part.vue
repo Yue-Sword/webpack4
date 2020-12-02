@@ -5,7 +5,7 @@
     	<div class="main_duty" v-cloak>{{main_duty_title}}</div>
       <div class="crews-alone">
         <div class="member clearfix" v-for="(item, index) in options.crews" :key="index" @click="showProfile(item, index, group)">
-          <el-avatar shape="square" :size="80" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
+          <el-avatar shape="square" :size="80" :src="$localhost + '/static/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
           <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
           <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
           <span class="tenure">{{item.tenure}}</span>
@@ -40,7 +40,7 @@
         <el-carousel :autoplay="false" height="800px" v-if="options.snapshot && options.snapshot.length">
           <el-carousel-item v-for="(item, index) in options.snapshot" :key="index">
             <div class="glimpse-box" style="margin: 0 auto;max-width: 20%;height: 760px;">
-              <el-image :src="item" fit="cover"></el-image>
+              <el-image :src="$localhost + '/static/glimpses/' + group.toLowerCase() +'/' + item" fit="cover"></el-image>
             </div>
           </el-carousel-item>
         </el-carousel>
@@ -78,7 +78,7 @@
       <div class="profile_photo left">
         <el-image
           style="width: 160px; height: 200px"
-          :src="profile.photo"
+          :src="$localhost + '/static/photos/' + profile.photo"
           fit="cover"
           lazy
           v-if="profile.photo"></el-image>
@@ -154,7 +154,7 @@ export default {
         this.profile_visible = true;
         this.profileTile = item.name + "个人简介";
         this.profile = {
-          photo: item.photo,
+          photo: item.photo[0],
           profile: item.profile
         };
         this.modifyProfile();
@@ -218,8 +218,8 @@ export default {
         return crew.more && index > this.curPersonIndex
       });
       this.curPersonIndex = idx.shift();
-      this.profileTile = crew.name + "  个人简介";
       let crew = crews.shift();
+      this.profileTile = crew.name + "  个人简介";
       this.profile = {
         photo: crew.photo,
         profile: crew.profile
@@ -258,9 +258,6 @@ export default {
       return state
     },
     modifyProfile() {
-      if(this.profile.photo.length) {
-        this.profile.photo = "/static/mock/photos/" + this.profile.photo[0];
-      }
       if(this.profile.profile) {
         let text = "<div class='section'>" + this.profile.profile + "</div>"
         text = text.replace(/\n/g, "\n</div><div class='section'>");
@@ -274,10 +271,6 @@ export default {
         return item.period === this.period;
       })[0];
       this.main_duty_title = this.getTime();
-      this.options.snapshot = this.options.snapshot.map(item =>{
-        item = "/static/mock/glimpses/" + this.group.toLowerCase() + "/" + item;
-        return item
-      })
     }
   },
   created() {
