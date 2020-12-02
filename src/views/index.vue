@@ -4,10 +4,10 @@
     <h1 class="title2">{{getTitle("ZW")}}</h1>
     <div class="content2">
       <div class="period2" v-for="(option, index) in ZWOptions" :key="index">
-        <el-link class="time2" title="查看详情" @click="goto(option, 'ZW')">{{getTime(option, "ZW")}}</el-link>
+        <el-link class="time2" title="查看详情" @click="goto(option, 'ZW', ZWOptions)">{{getTime(option, "ZW")}}</el-link>
         <div class="crews2">
-           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index, 1)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, 1)">
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -42,10 +42,6 @@
         </div>
         <div class="profile_content" v-html="profile1.profile"></div>
       </div>
-      <span slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
-        <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
-      </span>
     </el-dialog>
     <el-dialog
       :title="detailTitle1"
@@ -80,10 +76,10 @@
     <h1 class="title2">{{getTitle("RD")}}</h1>
     <div class="content2">
       <div class="period2" v-for="(option, index) in RDOptions" :key="index">
-        <el-link class="time2" title="查看详情"  @click="goto(option, 'RD')">{{getTime(option, "RD")}}</el-link>
+        <el-link class="time2" title="查看详情"  @click="goto(option, 'RD', RDOptions)">{{getTime(option, "RD")}}</el-link>
         <div class="crews2">
-          <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,2)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+          <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, 2)">
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -118,10 +114,6 @@
         </div>
         <div class="profile_content" v-html="profile2.profile"></div>
       </div>
-      <span slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
-        <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
-      </span>
     </el-dialog>
     <el-dialog
       :title="detailTitle2"
@@ -156,10 +148,10 @@
     <h1 class="title2">{{getTitle("ZF")}}</h1>
     <div class="content2">
       <div class="period2" v-for="(option, index) in ZFOptions" :key="index">
-        <el-link class="time2" title="查看详情" @click="goto(option, 'ZF')">{{getTime(option, "ZF")}}</el-link>
+        <el-link class="time2" title="查看详情" @click="goto(option, 'ZF', ZFOptions)">{{getTime(option, "ZF")}}</el-link>
         <div class="crews2">
-           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,3)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, 3)">
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -194,10 +186,6 @@
         </div>
         <div class="profile_content" v-html="profile3.profile"></div>
       </div>
-      <span slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
-        <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
-      </span>
     </el-dialog>
     <el-dialog
       :title="detailTitle3"
@@ -232,10 +220,10 @@
     <h1 class="title2">{{getTitle("ZX")}}</h1>
     <div class="content2">
       <div class="period2" v-for="(option, index) in ZXOptions" :key="index">
-        <el-link class="time2" title="查看详情" @click="goto(option, 'ZX')">{{getTime(option, "ZX")}}</el-link>
+        <el-link class="time2" title="查看详情" @click="goto(option, 'ZX', ZXOptions)">{{getTime(option, "ZX")}}</el-link>
         <div class="crews2">
-           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, index,4)">
-            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+           <div class="member2 clearfix" v-for="(item, index) in option.crews" :key="index" @click="showProfile(item, 4)">
+            <el-avatar shape="square" :size="50" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
             <div>
               <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
               <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
@@ -270,10 +258,6 @@
         </div>
         <div class="profile_content" v-html="profile4.profile"></div>
       </div>
-      <span slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="prePerson" v-if="hasPre">上一位</el-button>
-        <el-button type="primary" v-if="hasNext" @click="nextPerson">下一位</el-button>
-      </span>
     </el-dialog>
     <el-dialog
       :title="detailTitle4"
@@ -332,7 +316,6 @@ export default {
       profile2: {},
       profile3: {},
       profile4: {},
-      curPersonIndex: -1,
       detailTitle1: '',
       detailTitle2: '',
       detailTitle3: '',
@@ -419,47 +402,44 @@ export default {
     showDetails(type, group, option, flag) {
       let title = type == 'snapshot' ? "工作掠影" : (type == 'summary' ? '工作总结' : '工作内容');
       this["detailTitle" + flag] = this.getFullTitle(option, group, title);
-      const _this = this;
-      Ajax({
-        url: '/static/mock/periods/period-' + option.period + '.json',
-      }).then(data => {
-        if(type === 'snapshot') {
-          if(data[group][type] && data[group][type].length) {
-            _this["snapshot_visible" + flag] = true;
-            _this["snapshots" + flag] = data[group][type].map(item =>{
+      switch(type) {
+        case "snapshot": 
+          if(option.snapshot && option.snapshot.length) {
+            this["snapshot_visible" + flag] = true;
+            this["snapshots" + flag] = option.snapshot.map(item =>{
               item = "/static/mock/glimpses/" + group.toLowerCase() + "/" + item;
               return item
             })
           } else {
-            _this.$notify({
-              title: title,
-              message: '数据采集中，暂无数据',
-              type: 'warning',
-              duration: '1000'
-            });
+            this.emptyNotice(title)
           }
-        } else {
-          if(data[group][type]){
-            _this["main_duty_visible" + flag ] = true;
-            let text = "<div class='section'>" + data[group][type] + "</div>"
+          break;
+        case "summary":
+        case "main_duties":
+          if(option[type]){
+            this["main_duty_visible" + flag ] = true;
+            let text = "<div class='section'>" + option[type] + "</div>"
             text = text.replace(/\n/g, "\n</div><div class='section'>");
-            _this["main_duties" + flag] = text;
+            this["main_duties" + flag] = text;
           } else {
-            _this.$notify({
-              title: title,
-              message: '数据采集中，暂无数据',
-              type: 'warning',
-              duration: '1000'
-            });
+            this.emptyNotice(title)
           }
-        }
-      })
+          break;
+      }
+    },
+    emptyNotice(title) {
+      this.$notify({
+        title: title,
+        message: '数据采集中，暂无数据',
+        type: 'warning',
+        duration: '1000'
+      });
     },
     // 获取全部数据
     getWholePeriodData() {
       const _this = this;
       Ajax({
-        url: '/static/mock/periods/whole.json',
+        url: '/static/mock/whole.json',
       }).then(data => {
         _this.ZWOptions = data.ZW;
         _this.RDOptions = data.RD;
@@ -467,38 +447,28 @@ export default {
         _this.ZXOptions = data.ZX;
       })
     },
-    goto(option, group) {
+    goto(option, group, options) {
       this.$router.push({
         name: 'part',
         params: {
           option: option,
-          group: group
+          group: group,
+          options:  options
         }
       })
     },
-    showProfile(item, index, flag) {
-      this.curPersonIndex = index;
-      this.hasPre = this.checkPre();
-      this.hasNext = this.checkNext();
-      const _this = this;
+    showProfile(item, flag) {
+      console.log(item, flag)
       if(item.more){
-        Ajax({
-          url: '/static/mock/profiles/' + item.id + '.json',
-        }).then(data => {
-          if(data) {
-            _this["profile_visible" + flag] = true;
-            _this["profileTile" + flag] = item.name + "  个人简介";
-            _this["profile" + flag] = data.datas;
-            _this.modifyProfile(flag);
-          }
-        })
+        this["profile_visible" + flag] = true;
+        this["profileTile" + flag] = item.name + "  个人简介";
+        this["profile" + flag] = {
+          photo: item.photo,
+          profile: item.profile
+        };
+        this.modifyProfile(flag);
       } else {
-         this.$notify({
-          title: item.name,
-          message: '数据采集中，暂无数据',
-          type: 'warning',
-          duration: '1000'
-        });
+        this.emptyNotice(item.name)
       }
     },
     modifyProfile(flag) {
@@ -514,49 +484,13 @@ export default {
       } else {
         this["profile" + flag].profile = '数据采集中，暂无数据'
       }
-    },
-    checkPre() {
-      let pre = false;
-      // if(this.curPersonIndex > 0) {
-      //   const _this = this;
-      //   let crews = this.getCurCrews();
-      //   crews.forEach((crew, index) => {
-      //     if(crew.more && _this.curPersonIndex > index) pre = true;
-      //   })
-      // }
-      return pre
-    },
-    checkNext() {
-      let next = false;
-      // if(this.curPersonIndex > -1) {
-      //   const _this = this;
-      //   let crews = this.getCurCrews();
-      //   crews.forEach((crew, index) => {
-      //     if(crew.more && _this.curPersonIndex < index) next = true;
-      //   })
-      // }
-      return next
-    },
-    prePerson() {
-
-    },
-    nextPerson() {
-
     }
   },
   created() {
     // ...
   },
   mounted() {
-    // let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
-    // borderDom.style.maxWidth = "initial";
-    // borderDom.style.maxHeight = "initial";
-    // borderDom.style.minWidth = "3840px";
-    // borderDom.style.minHeight = "1080px";
     this.getWholePeriodData();
-    // let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
-    // let container2Dom = document.getElementsByClassName("container2")[0];
-    // container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
     let part2 = document.getElementsByClassName("part2")[0].getBoundingClientRect();
     this.part2Height = part2.height * 0.6
   }

@@ -1,11 +1,11 @@
 <template>
-<div class="container2" style="height: 95.5%;padding-top: 3%; padding-left: 5%; padding-right: 5%;">
+<div class="container2" style="height: 90.5%;padding-top: 3%; padding-left: 5%; padding-right: 5%;">
   <div class="part2 part-alone">
     <div class="content2" style="padding: 0.5% 1%;">
     	<div class="main_duty" v-cloak>{{main_duty_title}}</div>
       <div class="crews-alone">
         <div class="member clearfix" v-for="(item, index) in options.crews" :key="index" @click="showProfile(item, index, group)">
-          <el-avatar shape="square" :size="80" :src="'/static/mock/photos/' + (item.photo ? item.photo : 'avatar.png')"></el-avatar>
+          <el-avatar shape="square" :size="80" :src="'/static/mock/photos/' + (item.photo[0] ? item.photo[0] : 'avatar.png')"></el-avatar>
           <span class="station" :class="[{'space': item.station.length === 2}]">{{item.station}}</span>
           <span class="name" :class="[{'space2': item.name.length === 2, 'space3': item.name.length === 3}]">{{item.name}}</span>
           <span class="tenure">{{item.tenure}}</span>
@@ -118,7 +118,8 @@ export default {
       hasPre: false,
       hasNext: false,
       detailTitle: '',
-      main_duty_title: ''
+      main_duty_title: '',
+      wholeData: []
     }
   },
   computed:{
@@ -149,19 +150,14 @@ export default {
       this.curPersonIndex = index;
       this.hasPre = this.checkPre();
       this.hasNext = this.checkNext();
-      const _this = this;
       if(item.more){
-        Ajax({
-          url: '/static/mock/profiles/' + item.id + '.json',
-        }).then(data => {
-          if(data) {
-            _this.profile_visible = true;
-            _this.profileTile = item.name + "个人简介";
-            _this.profile = data.datas;
-            _this.modifyProfile();
-          }
-          console.log(data)
-        })
+        this.profile_visible = true;
+        this.profileTile = item.name + "个人简介";
+        this.profile = {
+          photo: item.photo,
+          profile: item.profile
+        };
+        this.modifyProfile();
       } else {
          this.$notify({
           title: item.name,
@@ -268,8 +264,6 @@ export default {
     modifyProfile() {
       if(this.profile.photo.length) {
         this.profile.photo = "/static/mock/photos/" + this.profile.photo[0];
-      } else {
-        this.profile.photo = ""
       }
       if(this.profile.profile) {
         let text = "<div class='section'>" + this.profile.profile + "</div>"
@@ -279,40 +273,32 @@ export default {
         this.profile.profile = '数据采集中，暂无数据'
       }
     },
-
-    // 获取某一届数据
     getPeriodData() {
-      const _this = this;
-      Ajax({
-        url: '/static/mock/periods/period-' + this.period + '.json',
-      }).then(data => {
-        _this.options = data[_this.group];
-        _this.main_duty_title = _this.getTime();
-        _this.options.snapshot = _this.options.snapshot.map(item =>{
-          item = "/static/mock/glimpses/" + _this.group.toLowerCase() + "/" + item;
-          return item
-        })
+      this.options = JSON.parse(JSON.stringify(this.wholeData)).filter(item => {
+        return item.period === this.period;
+      })[0];
+      this.main_duty_title = this.getTime();
+      this.options.snapshot = this.options.snapshot.map(item =>{
+        item = "/static/mock/glimpses/" + this.group.toLowerCase() + "/" + item;
+        return item
       })
     }
   },
   created() {
-    
+    //。。。
   },
   mounted() {
   	if(this.$route.params.group) {
-  		this.option = this.$route.params.option;
+      this.wholeData = JSON.parse(JSON.stringify(this.$route.params.options));
+  		this.options = this.$route.params.option;
       this.group = this.$route.params.group;
-      this.period = this.option.period;
-      // let borderDom = document.getElementsByClassName("ys-electronic-board")[0];
-      // borderDom.style.maxWidth = "1920px";
-      // borderDom.style.maxHeight = "1080px";
-      // borderDom.style.minWidth = "initial";
-      // borderDom.style.minHeight = "initial";
-      this.getPeriodData();
-      // let area = document.getElementsByClassName("ys-electronic-board")[0].getBoundingClientRect();
-      // let container2Dom = document.getElementsByClassName("container2")[0];
-      // container2Dom.style.paddingTop = (area.height*0.151/area.width*100).toFixed(1) + "%";
-  	}else{
+      this.period = this.options.period;
+      this.main_duty_title = this.getTime();
+      this.options.snapshot = this.options.snapshot.map(item =>{
+        item = "/static/mock/glimpses/" + this.group.toLowerCase() + "/" + item;
+        return item
+      })
+    }else{
   		history.back();
   	}
   }

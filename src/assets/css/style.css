@@ -12,7 +12,7 @@ code, kbd, pre, samp {
   font-family:PingFang SC, "Microsoft YaHei";
 } 
 small{
-  font-size:12px;
+  font-size:14px;
 } 
 ul, ol {
   list-style:none;
@@ -98,7 +98,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 }
 .iconfont {
   font-family:"iconfont";
-  font-size: 16px;
+  font-size: 18px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -160,7 +160,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {/*Internet Explore*/
 .header {
   margin: 40px auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 42px;
   font-weight: 700;
 }
 .container{
@@ -193,7 +193,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   text-align: center;
   top: -160px;
   left: 0;
-  font-size: 40px;
+  font-size: 42px;
   padding: 30px 20px;
   width: 100%;
   color: black;
@@ -201,7 +201,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
 .time {
   line-height: 80px;
   margin: 10px 0 30px 20px;
-  font-size: 30px;
+  font-size: 32px;
 }
 .member {
   cursor: pointer;
@@ -211,7 +211,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   writing-mode: lr-tb;
   display: inline-block;
   padding-left: 50px;
-  font-size: 20px;
+  font-size: 22px;
 }
 .member>span{
   float: left;
@@ -247,17 +247,17 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   padding: 20px 40px;
 }
 .profile_content {
-  font-size: 18px;
+  font-size: 20px;
 }
 .main_duties .section, .profile_content .section {
   text-align: justify;
   white-space: pre-line;
   text-indent: 2em;
-  font-size: 24px;
+  font-size: 26px;
 }
 .main_duty {
   margin:  5px 0 15px 20px;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 60px;
   height: 60px;
 }
@@ -266,11 +266,11 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   margin-right: 50px;
 }
 .main_duty_link {
-  font-size: 20px;
+  font-size: 22px;
 }
 .glimpse_label {
   line-height: 60px;
-  font-size:  24px;
+  font-size:  26px;
   margin: 5px 0 15px 20px;
 }
 .snapshot {
@@ -322,7 +322,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
 }
 .explain {
   padding: 60px 10px 20px 30px;
-  font-size: 20px;
+  font-size: 22px;
   color: yellow;
   line-height: 80px;
 }
@@ -338,7 +338,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
 .el-carousel__arrow {
   width: 60px;
   height: 60px;
-  font-size: 24px;
+  font-size: 26px;
 }
 .el-link.el-link--default.is-disabled {
   color: #606266;
@@ -347,18 +347,18 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   padding: 60px 20px 40px;
 }
 .dialog_custom_class .el-dialog__title {
-  font-size: 30px;
+  font-size: 32px;
   line-height: 80px;
   font-weight: 700;
 }
 .dialog_custom_class .el-dialog__headerbtn {
-  font-size: 30px
+  font-size: 32px
 }
 .dialog_custom_class .el-dialog__footer {
   padding: 40px 20px;
 }
 .dialog-footer .el-button {
-  font-size: 24px;
+  font-size: 26px;
 }
 .warning-color {
   color: yellow;
@@ -405,7 +405,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   text-align: center;
   top: -7%;
   left: 0;
-  font-size: 30px;
+  font-size: 32px;
   padding: 10px 5px;
   width: 100%;
   letter-spacing: 0.2em;
@@ -413,7 +413,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   text-shadow: 5px 5px 10px #000;
 }
 .time2 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 1%;
   cursor: pointer;
   user-select: none;
@@ -426,7 +426,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   min-width: 47%;
   writing-mode: lr-tb;
   display: inline-block;
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 3%;
   min-height: 80px;
   padding-bottom: 10px;
@@ -452,25 +452,25 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   padding: 60px 10px 20px;
 }
 .dialog_custom_class2 .el-dialog__title {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 60px;
   font-weight: 700;
 }
 .dialog_custom_class2 .el-dialog__headerbtn {
-  font-size: 24px
+  font-size: 26px
 }
 .dialog_custom_class2 .el-dialog__footer {
   padding: 20px 10px;
 }
 .dialog-footer2 .el-button {
-  font-size: 16px;
+  font-size: 19px;
 }
 .menu-actions {
-  padding: 40px;
+  padding: 30px;
   text-align: center;
 }
 .menu-actions button {
-  font-size: 18px;
+  font-size: 20px;
 }
 .member .el-avatar, .member2 .el-avatar {
   background: rgba(31,45,61,.11);
@@ -492,7 +492,7 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   background: rgba(31,45,61,.11);
   border: none;
   color: #FFF;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .btn-group button:hover, .btn-group button:active, .btn-group button:focus {
@@ -507,5 +507,5 @@ body::-webkit-scrollbar,.content::-webkit-scrollbar,.part2::-webkit-scrollbar {
   width: 80%;
 }
 .profile_content {
-  font-size: 36px;
+  font-size: 38px;
 }
