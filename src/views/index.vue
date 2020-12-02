@@ -292,6 +292,7 @@
 </template>
 <script>
 import Ajax from "@utils/request.js"
+import { getChineseNum } from "@utils"
 
 export default {
   data () {
@@ -300,7 +301,6 @@ export default {
       RDOptions: [],
       ZFOptions: [],
       ZXOptions: [],
-      china: ['一','二','三','四','五','六','七','八','九','十','十一','十二','十三', '十四'],
       explainText: '<div>特别说明：</div><div class="section">玉树州六届人大一次会议以前，均未设立常设机构，闭会期间，其职能由州人民委员会行使，1981年5月自治州第六届人民代表大会第一次会议选举产生了它的常设机关---州人民代表大会常务委员会。</div>',
       profile_visible1: false,
       profile_visible2: false,
@@ -367,16 +367,16 @@ export default {
       let time = '';
       switch(group) {
         case 'ZW':
-          time = "中共玉树州委第" + this.china[option.period - 1] + "届委员会： " + option.time;
+          time = "中共玉树州委第" + getChineseNum(option.period) + "届委员会： " + option.time;
           break;
         case 'RD':
-          time = "玉树州人大第" + this.china[option.period - 1] + "届常委会： " + option.time;
+          time = "玉树州人大第" + getChineseNum(option.period) + "届常委会： " + option.time;
           break;
         case 'ZF':
-          time = "玉树州政府第" + this.china[option.period - 1] + "届人代会： " + option.time;
+          time = "玉树州政府第" + getChineseNum(option.period) + "届人代会： " + option.time;
           break;
         case 'ZX':
-          time = "玉树州政协第" + this.china[option.period - 1] + "届委员会: " + option.time;
+          time = "玉树州政协第" + getChineseNum(option.period) + "届委员会: " + option.time;
           break;
       }
       return time
@@ -385,16 +385,16 @@ export default {
       let fulltitle = '';
       switch(group) {
         case 'ZW':
-          fulltitle = "玉树州第" + this.china[option.period - 1] + "届州委委员会 -- " + title;
+          fulltitle = "玉树州第" + getChineseNum(option.period) + "届州委委员会 -- " + title;
           break;
         case 'RD':
-          fulltitle = "玉树州第" + this.china[option.period - 1] + "届人大常委会 --  " + title;
+          fulltitle = "玉树州第" + getChineseNum(option.period) + "届人大常委会 --  " + title;
           break;
         case 'ZF':
-          fulltitle = "玉树州第" + this.china[option.period - 1] + "届人代会 -- " + title;
+          fulltitle = "玉树州第" + getChineseNum(option.period) + "届人代会 -- " + title;
           break;
         case 'ZX':
-          fulltitle = "玉树州第" + this.china[option.period - 1] + "届政协委员会 -- " + title;
+          fulltitle = "玉树州第" + getChineseNum(option.period) + "届政协委员会 -- " + title;
           break;
       }
       return fulltitle

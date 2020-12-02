@@ -94,7 +94,8 @@
 </div>
 </template>
 <script>
-import Ajax from "@utils/request.js"
+import { getChineseNum } from "@utils"
+
 
 export default {
   data () {
@@ -105,7 +106,6 @@ export default {
       	summary: '',
       	snapshot: []
       },
-      china: ['一','二','三','四','五','六','七','八','九','十','十一','十二','十三', '十四'],
       option: {},
       group: '',
       main_duty_visible: false,
@@ -131,16 +131,16 @@ export default {
       let time = '';
       switch(this.group) {
         case 'ZW':
-          time = "中共玉树州委第" + this.china[this.options.period - 1] + "届委员会： " + this.options.time;
+          time = "中共玉树州委第" + getChineseNum(this.options.period) + "届委员会： " + this.options.time;
           break;
         case 'RD':
-          time = "玉树州人大第" + this.china[this.options.period - 1] + "届常委会： " + this.options.time;
+          time = "玉树州人大第" + getChineseNum(this.options.period) + "届常委会： " + this.options.time;
           break;
         case 'ZF':
-          time = "玉树州政府第" + this.china[this.options.period - 1] + "届人代会： " + this.options.time;
+          time = "玉树州政府第" + getChineseNum(this.options.period) + "届人代会： " + this.options.time;
           break;
         case 'ZX':
-          time = "玉树州政协第" + this.china[this.options.period - 1] + "届委员会" + this.options.time;
+          time = "玉树州政协第" + getChineseNum(this.options.period) + "届委员会" + this.options.time;
           break;
       }
       return time
@@ -201,15 +201,11 @@ export default {
       this.curPersonIndex = idx.pop();
       let crew = crews.pop();
       this.profileTile = crew.name + "  个人简介";
-      const _this = this;
-      Ajax({
-        url: '/static/mock/profiles/' + crew.id + '.json',
-      }).then(data => {
-        if(data) {
-          _this.profile = data.datas;
-          _this.modifyProfile();
-        }
-      })
+      this.profile = {
+        photo: crew.photo,
+        profile: crew.profile
+      };
+      this.modifyProfile();
       this.hasPre = this.checkPre();
       this.hasNext = this.checkNext();
     },
@@ -222,17 +218,14 @@ export default {
         return crew.more && index > this.curPersonIndex
       });
       this.curPersonIndex = idx.shift();
-      let crew = crews.shift();
       this.profileTile = crew.name + "  个人简介";
-      const _this = this;
-      Ajax({
-        url: '/static/mock/profiles/' + crew.id + '.json',
-      }).then(data => {
-        if(data) {
-          _this.profile = data.datas;
-          _this.modifyProfile();
-        }
-      })
+      let crew = crews.shift();
+      this.profile = {
+        photo: crew.photo,
+        profile: crew.profile
+      };
+      this.modifyProfile();
+
       this.hasPre = this.checkPre();
       this.hasNext = this.checkNext();
     },
@@ -240,26 +233,29 @@ export default {
       return this.options.crews;
     },
     checkPre() {
-      let pre = false;
-      if(this.curPersonIndex > 0) {
-        const _this = this;
-        let crews = this.getCurCrews();
-        crews.forEach((crew, index) => {
-          if(crew.more && _this.curPersonIndex > index) pre = true;
-        })
-      }
-      return pre
+      return this.checkMore(false);
     },
     checkNext() {
-      let next = false;
-      if(this.curPersonIndex > -1) {
-        const _this = this;
+      return this.checkMore(true)
+    },
+    checkMore(orientation) {
+      // 约定true为next, false为prev
+      let state = false;
+      const _this = this;
+      if((this.curPersonIndex > -1 && orientation) || (this.curPersonIndex > 0 && !orientation)) {
         let crews = this.getCurCrews();
         crews.forEach((crew, index) => {
-          if(crew.more && _this.curPersonIndex < index) next = true;
+          if(crew.more) {
+            if(orientation) {
+              if(_this.curPersonIndex < index) state = true;
+            } else {
+              if(_this.curPersonIndex > index) state = true;
+            }
+          }
+          if(crew.more && _this.curPersonIndex < index) state = true;
         })
       }
-      return next
+      return state
     },
     modifyProfile() {
       if(this.profile.photo.length) {
@@ -285,7 +281,7 @@ export default {
     }
   },
   created() {
-    //。。。
+    //...
   },
   mounted() {
   	if(this.$route.params.group) {
