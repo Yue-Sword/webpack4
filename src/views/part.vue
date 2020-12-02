@@ -202,7 +202,7 @@ export default {
       let crew = crews.pop();
       this.profileTile = crew.name + "  个人简介";
       this.profile = {
-        photo: crew.photo,
+        photo: crew.photo[0],
         profile: crew.profile
       };
       this.modifyProfile();
@@ -221,7 +221,7 @@ export default {
       let crew = crews.shift();
       this.profileTile = crew.name + "  个人简介";
       this.profile = {
-        photo: crew.photo,
+        photo: crew.photo[0],
         profile: crew.profile
       };
       this.modifyProfile();
@@ -283,10 +283,6 @@ export default {
       this.group = this.$route.params.group;
       this.period = this.options.period;
       this.main_duty_title = this.getTime();
-      this.options.snapshot = this.options.snapshot.map(item =>{
-        item = "/static/mock/glimpses/" + this.group.toLowerCase() + "/" + item;
-        return item
-      })
     }else{
   		history.back();
   	}

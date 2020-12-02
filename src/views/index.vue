@@ -406,6 +406,7 @@ export default {
         case "snapshot": 
           if(option.snapshot && option.snapshot.length) {
             this["snapshot_visible" + flag] = true;
+            this["snapshots" + flag] = option.snapshot;
           } else {
             this.emptyNotice(title)
           }
